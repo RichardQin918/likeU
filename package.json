@@ -1,0 +1,43 @@
+{
+  "name": "likeU",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "body-parser": "^1.15.0",
+    "compression": "^1.6.1",
+    "config": "^1.19.0",
+    "cookie-parser": "~1.4.1",
+    "crypto": "0.0.3",
+    "deasync": "^0.1.4",
+    "debug": "~2.2.0",
+    "ejs": "~2.4.1",
+    "eventproxy": "^0.3.4",
+    "express": "~4.13.1",
+    "fs": "0.0.2",
+    "gm": "^1.22.0",
+    "log4js": "^0.6.29",
+    "md5": "^2.1.0",
+    "morgan": "~1.7.0",
+    "mqtt": "~1.7.4",
+    "multiparty": "^4.1.2",
+    "mysql": "^2.10.1",
+    "redis": "^2.5.3",
+    "sequelize": "^3.17.1",
+    "serve-favicon": "~2.3.0",
+    "wechat": "^2.0.3",
+    "wechat-api": "^1.23.0",
+    "wechat-oauth": "^1.1.0",
+    "wechat-pay": "^0.2.2",
+    "wechat-redpack": "^1.0.3",
+    "xls-to-json": "*",
+    "xlsx-to-json": "*"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.3.0"
+  }
+}

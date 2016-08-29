@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	<title>用户信息</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<link rel="stylesheet" href="../../game/css/likeU/all.css">
+
+</head>	
+<style>
+		.page,.scan-result-wrap{
+		overflow-x:hidden; 
+		position: relative;
+		width: 100%;
+	}
+	.people-title{
+		left: 0;
+	}
+</style>
+<body>
+<<<<<<< .mine
+
+
+
+<div style="position: relative">
+=======
+<input type="text" value="<%=code%>" id="input">
+<!-- <div style="position: relative">
+>>>>>>> .r5817
+	
+	<div class="people3">
+		<img src="../../game/images/likeU/main/people.png" alt="">
+	</div>
+
+	<div class="title1" >
+		<img src="../../game/images/likeU/main/title3.png"alt="">
+	</div>
+
+	<div class="btn1">
+		<a href=""><img src="../../game/images/likeU/main/btn-start.png" alt="" ></a>
+	</div>
+	<div class="btn2">
+		<a href=""><img src="../../game/images/likeU/main/btn-edit.png" alt="" ></a>
+	</div>
+
+		<div class="comment1 pr">
+		<p>只有答对我题目的人才有资格做朋友</p>
+		<h2>-大懒猫</h2>
+		</div>
+	
+
+
+</div> -->
+	<script src="../website/js/libs/jquery/dist/jquery.min.js"></script>
+	
+
+	
+</body>
+
+</html>
+
+
+</body>
+</html>

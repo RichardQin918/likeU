@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="no" />
+	<title>广州炒米信息科技有限公司</title>
+	<link rel="stylesheet" href="/css/base.css">
+
+</head>
+<body data-page="faq" class="no-hide faq">
+<div class="s-head">
+	<div class="s-head-wrap">
+		<div class="fl">
+			<img src="/images/logo-2.png" alt="" class="fl logo-img">
+			<span class="title fl">
+				FAQ
+			</span>
+		</div>
+		<div class="fr">
+			<a class="fl home" href="/index.html"><img class="fl" src="/images/home.png" alt=""><span class="fl">首页</span></a>
+		</div>
+	</div>
+</div>
+
+<div class="section s-section">
+	<div class="chat fl">
+
+		<!--问题-->
+		<div class="chat-tow">
+			<div class="people">
+				<img src="/images/people.png" alt="" class="fl">
+				<div class="fl m-7">
+					<div class="p-chat-p">
+						<div class="san"></div>
+						<p>什么是照片梳子？</p>
+					</div>
+					<!-- <div class="from-p">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="/images/chaomi.png" alt="" class="fr">
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<p>照片梳子是由广州炒米科技团队推出的一款运行于Android手机智能整理图片软件，炒米秉承 “做最智能的照片整理工具”的理念，目标是让人人都轻松简单管理手机图片；</p>
+					</div>
+					<!-- <div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<span class="yuan"></span>
+		</div>
+		<!--问题-->
+
+		<!--问题-->
+		<div class="chat-tow">
+			<div class="people">
+				<img src="/images/people.png" alt="" class="fl">
+				<div class="fl m-7">
+					<div class="p-chat-p">
+						<div class="san"></div>
+						<p>私密相册如何使用？</p>
+					</div>
+					<!-- <div class="from-p">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="/images/chaomi.png" alt="" class="fr">
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<p>照片梳子目前提供两种私密相册加密方式：人像密码和手势密码方式，用户可以根据自己需求进行设置；人像密码通过扫描人像特征值作为依据私密相册解锁密码；手势密码通过用户设定特定图案设置为相册解锁密码；</p>
+					</div>
+					<!-- <div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<span class="yuan"></span>
+		</div>
+		<!--问题-->
+
+		<!--问题-->
+		<div class="chat-tow">
+			<div class="people">
+				<img src="/images/people.png" alt="" class="fl">
+				<div class="fl m-7">
+					<div class="p-chat-p">
+						<div class="san"></div>
+						<p>如果卸载后如何照片梳子找回之前在私密相册中加密的照片？</p>
+					</div>
+					<!-- <div class="from-p">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="/images/chaomi.png" alt="" class="fr">
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<p>照片梳子对放入到私密相册中的进行了加密处理，如果卸载照片梳子后原来放置在私密相册中的照片将无法找回，需要重新安装照片梳子后将私密相册中的照片解密移除后方可找回之前的照片，建议用户卸载前将私密相册的照片进行解密。</p>
+					</div>
+					<!-- <div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<span class="yuan"></span>
+		</div>
+		<!--问题-->
+
+		<!--问题-->
+		<div class="chat-tow">
+			<div class="people">
+				<img src="/images/people.png" alt="" class="fl">
+				<div class="fl m-7">
+					<div class="p-chat-p">
+						<div class="san"></div>
+						<p>用照片梳子整理我的照片安全么？</p>
+					</div>
+					<!-- <div class="from-p">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="/images/chaomi.png" alt="" class="fr">
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<p>照片梳子通过本地人像识别算法进行图片，整个识别过程均在app本地完成，并未上传和转移你的照片，非常安全靠谱；</p>
+					</div>
+					<!-- <div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<span class="yuan"></span>
+		</div>
+		<!--问题-->
+
+		<!--问题-->
+		<div class="chat-tow">
+			<div class="people">
+				<img src="/images/people.png" alt="" class="fl">
+				<div class="fl m-7">
+					<div class="p-chat-p">
+						<div class="san"></div>
+						<p>我的照片微信、QQ、其他相机拍照的图片为什么没有分析出来？</p>
+					</div>
+					<!-- <div class="from-p">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="/images/chaomi.png" alt="" class="fr">
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<p>照片梳子对手机图片默认对手机拍摄的照片进行分析整理。通过其他途径获得照片因涉及产品权限及授权许可等问题未做分析整理，但照片梳子不干涉其他工具的收发、生成的图片。</p>
+					</div>
+					<!-- <div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<span class="yuan"></span>
+		</div>
+		<!--问题-->
+
+		<!--问题-->
+		<div class="chat-tow">
+			<div class="people">
+				<img src="/images/people.png" alt="" class="fl">
+				<div class="fl m-7">
+					<div class="p-chat-p">
+						<div class="san"></div>
+						<p>使用照片梳子分析出来的人数有时精准，有时存在偏差？</p>
+					</div>
+					<!-- <div class="from-p">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="/images/chaomi.png" alt="" class="fr">
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<p>照片梳子是基于机器视觉模式，模拟人类思维快速将照片按人进行分析分类，当照片所处在光线不足，曝光过度，模糊，重叠等各种异常或极端情况下，可能会出现“识别疲劳”等现象，照片梳子提供对照片的人工更正操作，你可对识别有错的照片进行“更正”操作，可合并或删除识别有错的人。</p>
+					</div>
+					<!-- <div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<span class="yuan"></span>
+		</div>
+		<!--问题-->
+
+		<!--问题-->
+		<div class="chat-tow">
+			<div class="people">
+				<img src="/images/people.png" alt="" class="fl">
+				<div class="fl m-7">
+					<div class="p-chat-p">
+						<div class="san"></div>
+						<p>照片梳子里的“照片去重”和“照片去差”是什么？
+						</p>
+					</div>
+					<!-- <div class="from-p">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="/images/chaomi.png" alt="" class="fr">
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<p>照片梳子提供强大的照片分析与处理功能，“照片去重”是自动找出出手机中的重复拍摄的内容照片，在照片的人物和背景极为相似的情况下，照片梳子分析出拍摄质量最佳的一张，建议用户删除其他照片整理；“照片去差”则分析照片中所有模糊、重影等质量弱的照片，按差质的图片排序勾选，建议用户删除拍摄质量差的照片。</p>
+					</div>
+					<!-- <div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<span class="yuan"></span>
+		</div>
+		<!--问题-->
+
+		<!--问题-->
+		<div class="chat-tow">
+			<div class="people">
+				<img src="/images/people.png" alt="" class="fl">
+				<div class="fl m-7">
+					<div class="p-chat-p">
+						<div class="san"></div>
+						<p>无法通过照片梳子的相机按键启动拍照？</p>
+					</div>
+					<!-- <div class="from-p">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="/images/chaomi.png" alt="" class="fr">
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<p>因Android应用众多，可能存在不适配无法兼容的情况，给你带来困扰，请您把的手机型号、联系方式反馈给我们客服人员，我们将统一收集问题，有专人给予处理与答复。也可通过我们的官网、微信号、APP内置的意见反馈等任务方式向我们反馈。</p>
+					</div>
+					<!-- <div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<span class="yuan"></span>
+		</div>
+		<!--问题-->
+
+		<!--问题-->
+		<div class="chat-tow">
+			<div class="people">
+				<img src="/images/people.png" alt="" class="fl">
+				<div class="fl m-7">
+					<div class="p-chat-p">
+						<div class="san"></div>
+						<p>照片梳子分析过程有时快，有时慢？</p>
+					</div>
+					<!-- <div class="from-p">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="/images/chaomi.png" alt="" class="fr">
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<p>照片梳子首次安装启动会自动启动分析程序，整个分析过程所手机性能、拍摄照片数量、质量、联网络方式等因素因素影响，一般来说照片数量越多分析时间稍微长些，后面有如新增的照片，照片梳子会自动对新增拍照照片进行增量分析处理。</p>
+					</div>
+					<!-- <div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<span class="yuan"></span>
+		</div>
+		<!--问题-->
+
+		<!--问题-->
+		<div class="chat-tow">
+			<div class="people">
+				<img src="/images/people.png" alt="" class="fl">
+				<div class="fl m-7">
+					<div class="p-chat-p">
+						<div class="san"></div>
+						<p>在微信公众号中如何下载？</p>
+					</div>
+					<!-- <div class="from-p">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="/images/chaomi.png" alt="" class="fr">
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<p>请关注炒米科技微信公众号，在公众号的【炒米粉】菜单中选择【APP下载】，打开页面后点页面右上角菜单，在弹出的菜单中选择【在浏览器中打开】，点击页面下方的下载按钮即可。</p>
+						<img class="show-big" src="/images/p-wx-small.png" data-big="../oldWebsite/images/p-wx-big.png" alt="">
+					</div>
+					<!-- <div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div> -->
+				</div>
+			</div>
+			
+		</div>
+		<!--问题-->
+
+		<!-- 
+		<div class="chat-tow">
+			<div class="people">
+				<img src="images/people.png" alt="" class="fl"> 
+				<div class="fl m-7">
+					<div class="p-chat-p">
+						<div class="san"></div>
+						<p>我的手机升级之后感觉整个人都不好了……<br>怎么破？</p>
+					</div>
+					<div class="from-p">
+						-2015-10-1 06:00:00    炒米科技
+					</div>
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="images/chaomi.png" alt="" class="fr"> 
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<p>尊敬的用户：您好!请问装后整个人哪里不好了？</p>
+					</div>
+					<div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div>
+				</div>
+			</div>
+			<div class="chaomi">
+				<img src="images/chaomi.png" alt="" class="fr"> 
+				<div class="fr m-7">
+					<div class="p-chat-p c-chat-c">
+						<div class="san san-2"></div>
+						<div class="chao-img">
+							<img class="show-big" src="images/p-101-small.jpg" data-big="images/p-101-big.jpg" alt="">
+							<img class="show-big" src="images/p-101-small.jpg" data-big="images/p-101-big.jpg" alt="">
+						</div>
+					</div>
+					<div class="from-p from-c fr">
+						-2015-10-1 06:00:00    炒米科技
+					</div>
+				</div>
+			</div>
+			<span class="yuan"></span>
+		</div> -->
+	</div>
+	<div class="hot fl">
+		<!-- <div class="search">
+			<div class="search-input">
+				<input type="text" placeholder="搜索">
+			</div>
+			<button></button>
+		</div> -->
+		<div class="hot-wrap">
+
+			<h3>
+				热搜排行
+			</h3>
+			<ul>
+				<li><a href="#">1.如何安装？</a></li>
+				<li><a href="#">2.分析不准确？</a></li>
+				<li><a href="#">3.********？</a></li>
+				<li><a href="#">4.********？</a></li>
+				<li><a href="#">5.********？</a></li>
+				<li><a href="#">6.********？</a></li>
+				<li><a href="#">7.********？</a></li>
+				<li><a href="#">8.********？</a></li>
+				<li><a href="#">9.********？</a></li>
+				<li><a href="#">10.********？</a></li>
+			</ul>
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+<!--footer-->
+	<div class="footer container-h container-h-2">
+			<p class="copyright">
+				炒米科技     Copyright 2015       备案号：粤ICP备15099825号
+			</p>
+</div>
+
+<div class="show-img">
+	<div class="show-wrap">
+		<img src="" alt="">
+		<div class="close"></div>
+	</div>
+</div>
+<div class="zz"></div>
+
+
+
+<!--script-->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/plug.js"></script>
+	<script src="/js/view.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/*
+ Created with Sublime Text 2.
+ User: MengPeng
+ Date: 7/12/15
+ Time: 14:30 AM
+ Desc: md5 - the helper of md5  MD5数据加密类
+ */
+var crypto = require('crypto');
+
+function md5(str){
+    var hash = crypto.createHash('md5');
+    return hash.update(str+"").digest('hex').toUpperCase();
+}
+
+exports.md5 = md5;

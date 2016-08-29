@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>开始界面</title>
+	<meta content="chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="cache-control" max-age="0" content="public">
+<link rel="stylesheet" href="../../game/css/likeU/all.css?V12">
+
+<script src= "http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+<style> 
+.page,.scan-result-wrap{
+overflow-x:hidden; 
+position: relative;
+width: 100%;
+}
+.people-title{
+	left: 0;
+}
+</style>
+</head>
+<body>
+<input type="hidden" value="<%=myInfo.nickname%>" id="nickname">
+<input type="hidden" value="<%=myInfo.headimgurl%>" id="headimgurl">
+<input type="hidden" value="<%=myInfo.openid%>" id="openid">
+<input type="hidden" value="<%=myInfo.sex%>" id="sex">
+
+
+<div style="position: relative">
+	<div  alt=""><img src="../../game/images/likeU/ios.png"  id="shareIos" alt=""></div>
+	<div  alt=""><img src="../../game/images/likeU/android.png"  id="shareAndroid" alt=""></div>
+
+	<div class="people3">
+		<img id="headimg" alt="">
+	</div>
+
+	<div class="title1" >
+		<img src="../../game/images/likeU/main/title3.png" alt="">
+	</div>
+	<% var base_url = '/gamePage/likeU' %>
+	<div class="btn7">
+		<a id="takeQ"><img src="../../game/images/likeU/main/btn-start.png" id="startAnswer" alt="" ></a>
+	</div>
+	<div class="btn7">
+		<a href="<%= base_url + '/make?mode=next&page=1'%>"><img src="../../game/images/likeU/main/btn-edit.png"  id="edit" alt=""  ></a>
+	</div>
+	<div class="btn1">
+		<a id="sharePage"><img src="../../game/images/likeU/main/btn-share.png" id="share" alt=""></a>
+	</div>
+	<div class="btn2">
+		<a href="<%=base_url + '/make?mode=maker&page=1&openid='%>"><img src="../../game/images/likeU/main/btn-retry.png" id = "retry" alt="" ></a>
+	</div>
+	<div class="btn7">
+		<a href="<%=base_url + '/make?mode=maker&openid='%>"><img src="../../game/images/likeU/main/btn-startMake.png" id = "startMake" alt="" ></a>
+	</div>
+
+
+	
+
+		<div class="comment1 pr" alt="">
+		<p>只有答对我题目的人才有资格做朋友</p>
+		<h2 id="name" alt=""></h2>
+		</div>
+
+</div>
+
+<script src="../../hardware/js/libs/zepto/zepto.min.js"></script>
+<script src="../../website/js/libs/jquery/dist/jquery.min.js"></script>
+<script src="../../game/js/likeU/controllers/start.js"></script>
+
+
+</body>
+</html>

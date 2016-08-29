@@ -1,0 +1,92 @@
+var express = require('express');
+var router = express.Router();
+var fs = require('fs');
+/*var multiparty = require('multiparty');*/
+var util = require('util');
+var request = require('request');
+var auth = require('../../controllers/game/likeU/auth');
+
+var router = express.Router();
+var wxapi = require('../../utils/wxapi')
+
+var _url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx171b34dbe80e67f5&redirect_uri=http://www.cume.cc/gamePage/likeU/start?no=123&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect';
+
+var fs = require('fs');
+
+
+
+
+router.get('/index', function(req, res, next) {
+	res.render('game/index.html');
+});
+
+router.get('/fillIn', function(req, res, next) {
+  	var name = req.query.name;
+  	//防止注入
+
+
+
+	setNews(name,res);
+});
+
+
+
+
+
+
+//likeU
+router.get('/likeU', function(req, res, next) {
+	res.redirect(_url);
+});
+	
+
+router.get('/likeU/start', function(req, res, next) {
+	var code = req.query.code;
+	var _res = res;
+	var token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx171b34dbe80e67f5&secret=c4bd689e38d38afff7e88290e59d73c7&code='+code+'&grant_type=authorization_code';
+	request.get(token_url, function(error, res, body) {
+	    // var tokenObj = wxapi.wxGetAccessToken.token;
+	    console.log('this is the token' + tokenObj)
+
+	    var tokenObj = JSON.parse(body);
+	    var user_url = 'https://api.weixin.qq.com/sns/userinfo?access_token='+tokenObj.access_token+'&openid='+tokenObj.openid;
+	    request.get(user_url, function(error, res, body) {
+	    	if(!error){
+	    		console.log(body);
+				_res.render('game/likeU/start.html',{myInfo:JSON.parse(body),errMessage:""});
+	    	}
+	    });	
+	  });
+	//res.render('hardware/loading.html',{userInfo:null,errMessage:"获取用户信息失败，请退出再重试"});
+});
+
+
+
+router.get('/likeU/make', function(req, res, next) {
+	res.render('game/likeU/make.html');
+});
+
+router.get('/likeU/share', function(req, res, next) {
+	res.render('game/likeU/share.html');
+});
+
+
+router.get('/likeU/end', function(req, res, next) {
+	res.render('game/likeU/end.html');
+});
+
+<<<<<<< .mine
+
+
+
+
+
+
+
+
+
+
+
+=======
+>>>>>>> .r5817
+module.exports = router;

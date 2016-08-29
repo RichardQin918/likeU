@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>出题页面/做题页面</title>
+	<meta content="chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="cache-control" max-age="0" content="public">
+<link rel="stylesheet" href="../../game/css/likeU/all.css?V12">
+<style>
+		.page,.scan-result-wrap{
+		overflow-x:hidden; 
+		position: relative;
+		width: 100%;
+	}
+	.people-title{
+		left: 0;
+	}
+</style>
+<body>
+
+	<div class= "option">
+				
+		<div class="table">
+			<img src="../../game/images/likeU/process/table_01.png" class="table_head" alt="">
+			<div class= "option_body_1">
+				<h4>1.四部动画中，我最喜欢？</h4>
+				<ul>
+					<li class="choice1">
+						<h6>A.name1</h6>
+						<img src="../../game/images/likeU/process/option.png" alt="">
+					</li>
+
+					<li class="choice2">
+						<h6>B.name2</h6>
+						<img src="../../game/images/likeU/process/option.png" alt="">
+					</li>
+
+				</ul>
+			</div>
+			<div class="option_body_2">
+				<ul>
+					<li class="choice3" >
+						<h6>C.name3</h6>
+						<img src="../../game/images/likeU/process/option.png" alt="">
+					</li>
+
+					<li class="choice4">
+						<h6>D.name4</h6>
+						<img src="../../game/images/likeU/process/option.png"  alt="">
+					</li>
+
+				</ul>
+			</div>
+			
+			<img src="../../game/images/likeU/process/table_03.png"
+			class="table_tail" alt="">
+
+			<% var base_url = '/gamePage/likeU' %>
+			<div class="btn5">
+				<a href="<%=base_url + '/make'%>"><img src="../../game/images/likeU/process/btn-shaffle.png" alt="" ></a>
+			</div>
+			<div class="btn6">
+				<a href="<%=base_url + '/end'%>"><img src="../../game/images/likeU/process/btn-next.png" alt="" ></a>
+			</div>
+
+			<div class="footer ps">
+				<span>第x题, 共x题</span>
+		</div>
+	</div>
+
+<script src="../../hardware/js/libs/zepto/zepto.min.js"></script>
+<script src="../../website/js/libs/jquery/dist/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		if (localStorage){
+			var myInfo = localStorage.getItem("myInfo");
+			myInfo = JSON.parse(myInfo)
+			// alert(myInfo.headimgurl)
+			// alert(typeof(myInfo.headimgurl))
+			var nickname = myInfo.nickname;
+			var head = myInfo.headimgurl;
+		$("#name").text("-" + "Richard");
+		$("#headimg").attr("src", head);
+		// alert($("#headimg").attr("src"))
+		};
+
+	});
+	</script>
+
+
+</body>
+</html>
+
+
+
+
+
+

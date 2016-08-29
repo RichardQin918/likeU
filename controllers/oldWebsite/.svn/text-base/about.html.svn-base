@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="no" />
+	<title>广州炒米信息科技有限公司</title>
+	<link rel="stylesheet" href="css/base.css">
+
+</head>
+<body data-page="about" class="no-hide news">
+
+
+
+
+<div class="s-head">
+	<div class="s-head-wrap">
+		<div class="fl">
+			<img src="images/logo-2.png" alt="" class="fl logo-img">
+			<span class="title fl">
+				炒米
+			</span>
+		</div>
+		<div class="fr">
+			<a class="fl home" href="index.html"><img class="fl" src="images/home.png" alt=""><span class="fl">首页</span></a>
+		</div>
+	</div>
+</div>
+
+<div class="section s-section news-section">
+	<div class="chat fl a-p about">
+		<div class="news-wrap about-wrap">
+			<h3>
+				<span>炒米科技</span><b></b>
+			</h3>
+		</div>
+		<div class="chao-mi">
+			<img src="images/new-img.jpg" alt="">
+			<div>炒米环境图</div>
+		</div>
+		
+		<p>
+			广州炒米信息科技有限公司（以下简称:炒米）以机器视觉和人工智能为基础，以【精致、颠覆】为精神，聚集了一支立志改变生活的移动互联网研发、管理、运营团队，致力于为家庭移动智能新生活提供服务。
+		</p>
+		<p>
+			在炒米的蓝图中，照片不再是简单的瞬间记录，也不仅用于回忆过去。是对自己的深层认识，对家庭长辈的温馨关怀，对同龄好友的关切问候，对身边孩子的生活呵护，是一种全新的‘互联’‘物联’智能生活方式。炒米将在移动互联网和家庭智能生活领域赋予照片颠覆性的体验。
+		</p>
+		<p>
+			让我们共同步入‘生活与照片多彩对话’的时代。
+		</p>
+
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+<!--footer-->
+	<div class="footer container-h container-h-2">
+			<p class="copyright">
+				炒米科技     Copyright 2015       备案号：粤ICP备15099825号
+			</p>
+</div>
+
+<div class="show-img">
+	<div class="show-wrap">
+		<img src="" alt="">
+		<div class="close"></div>
+	</div>
+</div>
+<div class="zz"></div>
+
+
+
+<!--script-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/plug.js"></script>
+	<script src="js/view.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+{"question":[
+		{
+			"id":1,
+			"title": "四部动漫中,我最喜欢？",
+			"optionA":{"name": "名侦探柯南", "img":"0101.jpg"},
+			"optionB":{"name":"喜羊羊与灰太狼", "img":"0102.jpg"},
+			"optionC":{"name":"火影忍者", "img": "0103.jpg"},
+			"optionD":{"name":"葫芦娃", "img": "0104.jpg"}
+
+		},
+
+
+		{
+			"id":2,
+			"title": "四件裤子中，我最喜欢？",
+			"optionA":{"name": "皮裤", "img":"0201.jpg"},
+			"optionB":{"name":"秋裤", "img":"0202.jpg"},
+			"optionC":{"name":"毛裤", "img": "0203.jpg"},
+			"optionD":{"name":"外穿内裤", "img": "0204.jpg"}
+
+		},
+
+
+		{
+			"id":3,
+			"title": "四个组合,我最喜欢？",
+			"optionA":{"name": "TFBOYS", "img":"0301.jpg"},
+			"optionB":{"name":"SUNSHINE", "img":"0302.jpg"},
+			"optionC":{"name":"NICE", "img": "0303.jpg"},
+			"optionD":{"name":"LOVE WINGS", "img": "0304.jpg"}
+		},
+
+		
+
+		{
+			"id":4,
+			"title": "四个美女，我最喜欢？？",
+			"optionA":{"name": "凤姐", "img":"0401.jpg"},
+			"optionB":{"name":"如花", "img":"0402.jpg"},
+			"optionC":{"name":"芙蓉姐姐", "img": "0403.jpg"},
+			"optionD":{"name":"李宇春", "img": "0404.jpg"}
+		},
+
+		{
+			"id":5,
+			"title": "四个帅哥，我最喜欢？",
+			"optionA":{"name": "张全蛋", "img":"0501.jpg"},
+			"optionB":{"name":"艾克里里", "img":"0502.jpg"},
+			"optionC":{"name":"宋小宝", "img": "0503.jpg"},
+			"optionD":{"name":"唐马儒", "img": "0504.jpg"}
+		},
+
+		{
+			"id":6,
+			"title": "四大网红，我最喜欢？",
+			"optionA":{"name": "尔康", "img":"0601.jpg"},
+			"optionB":{"name":"天线宝宝", "img":"0602.jpg"},
+			"optionC":{"name":"金馆长", "img": "0603.jpg"},
+			"optionD":{"name":"熊本", "img": "0604.jpg"}
+
+		},
+
+		{
+			"id":7,
+			"title": "四位欧巴，我最喜欢？",
+			"optionA":{"name": "宋仲基", "img":"0701.jpg"},
+			"optionB":{"name":"金秀贤", "img":"0702.jpg"},
+			"optionC":{"name":"李敏镐", "img": "0703.jpg"},
+			"optionD":{"name":"权志龙", "img": "0704.jpg"}
+
+		},
+
+		{
+			"id":8,
+			"title": "四首歌，我最喜欢？",
+			"optionA":{"name": "小苹果", "img":"0801.jpg"},
+			"optionB":{"name":"最炫民族风", "img":"0802.jpg"},
+			"optionC":{"name":"我的滑板鞋", "img": "0803.jpg"},
+			"optionD":{"name":"青春修炼手册", "img": "0804.jpg"}
+
+		},
+
+		{
+			"id":9,
+			"title": "四种乐器，我最喜欢？",
+			"optionA":{"name": "唢呐", "img":"0901.jpg"},
+			"optionB":{"name":"箫", "img":"0902.jpg"},
+			"optionC":{"name":"二胡", "img": "0903.jpg"},
+			"optionD":{"name":"钹", "img": "0904.jpg"}
+
+		},
+
+		{
+			"id":10,
+			"title": "四大天王，我最喜欢？",
+			"optionA":{"name": "刘德华", "img":"1001.jpg"},
+			"optionB":{"name":"张学友", "img":"1002.jpg"},
+			"optionC":{"name":"黎明", "img": "1003.jpg"},
+			"optionD":{"name":"郭富城", "img": "1004.jpg"}
+
+		},
+
+		{
+			"id":11,
+			"title": "四个爸爸，我最喜欢？",
+			"optionA":{"name": "马云", "img":"1101.jpg"},
+			"optionB":{"name":"王健林", "img":"1102.jpg"},
+			"optionC":{"name":"比尔盖茨", "img": "1103.jpg"},
+			"optionD":{"name":"贝克汉姆", "img": "1104.jpg"}
+
+		},
+
+		{
+			"id":12,
+			"title": "四对CP，我最喜欢？",
+			"optionA":{"name": "姜医生和柳大尉", "img":"1201.jpg"},
+			"optionB":{"name":"都叫兽和千颂伊", "img":"1202.jpg"},
+			"optionC":{"name":"霍建华和胡歌", "img": "1203.jpg"},
+			"optionD":{"name":"霍建华和林心如", "img": "1204.jpg"}
+
+		},
+
+		{
+			"id":13,
+			"title": "四个老公，我最喜欢？",
+			"optionA":{"name": "郭碧婷", "img":"1301.jpg"},
+			"optionB":{"name":"王思聪", "img":"1302.jpg"},
+			"optionC":{"name":"宁泽涛", "img": "1303.jpg"},
+			"optionD":{"name":"宋仲基", "img": "1304.jpg"}
+
+		},
+
+		{
+			"id":14,
+			"title": "四个女儿，我最喜欢？",
+			"optionA":{"name": "小葡萄", "img":"1401.jpg"},
+			"optionB":{"name":"grace", "img":"1402.jpg"},
+			"optionC":{"name":"甜馨", "img": "1403.jpg"},
+			"optionD":{"name":"韩小野", "img": "1404.jpg"}
+
+		},
+
+		{
+			"id":15,
+			"title": "四位国际友人，我最喜欢？",
+			"optionA":{"name": "大帝", "img":"1501.jpg"},
+			"optionB":{"name":"金三胖", "img":"1502.jpg"},
+			"optionC":{"name":"奥巴马", "img": "1503.jpg"},
+			"optionD":{"name":"小李子", "img": "1504.jpg"}
+
+		},
+
+		{
+			"id":16,
+			"title": "四大明星，我最喜欢？",
+			"optionA":{"name": "张翰", "img":"1601.jpg"},
+			"optionB":{"name":"小S", "img":"1602.jpg"},
+			"optionC":{"name":"姑姑", "img": "1603.jpg"},
+			"optionD":{"name":"费玉清", "img": "1604.jpg"}
+
+		},
+
+		{
+			"id":17,
+			"title": "四只熊，我最喜欢？",
+			"optionA":{"name": "熊本", "img":"1701.jpg"},
+			"optionB":{"name":"泰迪", "img":"1702.jpg"},
+			"optionC":{"name":"维尼", "img": "1703.jpg"},
+			"optionD":{"name":"倒霉熊", "img": "1704.jpg"}
+
+		},
+
+		{
+			"id":18,
+			"title": "四个超级英雄，我最喜欢？",
+			"optionA":{"name":"美国队长", "img":"1801.jpg"},
+			"optionB":{"name":"钢铁侠", "img":"1802.jpg"},
+			"optionC":{"name":"蝙蝠侠", "img": "1803.jpg"},
+			"optionD":{"name":"闪电侠", "img": "1804.jpg"}
+
+		},
+
+		{
+			"id":19,
+			"title": "四只猫，我最喜欢？",
+			"optionA":{"name": "龙猫", "img":"1901.jpg"},
+			"optionB":{"name":"哆啦A梦", "img":"1902.jpg"},
+			"optionC":{"name":"加菲猫", "img": "1903.jpg"},
+			"optionD":{"name":"kitty", "img": "1904.jpg"}
+
+		},
+
+		{
+			"id":20,
+			"title": "四只狗，我最喜欢？",
+			"optionA":{"name": "帕克", "img":"2001.jpg"},
+			"optionB":{"name":"小白", "img":"2002.jpg"},
+			"optionC":{"name":"史努比", "img": "2003.jpg"},
+			"optionD":{"name":"定春", "img": "2004.jpg"}
+
+		},
+
+		{
+			"id":21,
+			"title": "四只老鼠，我最喜欢？",
+			"optionA":{"name": "米奇", "img":"2101.jpg"},
+			"optionB":{"name":"皮卡丘", "img":"2102.jpg"},
+			"optionC":{"name":"杰瑞", "img": "2103.jpg"},
+			"optionD":{"name":"哈姆太郎", "img": "2104.jpg"}
+
+		},
+
+		{
+			"id":22,
+			"title": "四种妹子，我最喜欢？",
+			"optionA":{"name": "女汉子", "img":"2201.jpg"},
+			"optionB":{"name":"萌妹子", "img":"2202.jpg"},
+			"optionC":{"name":"性感女神", "img": "2203.jpg"},
+			"optionD":{"name":"文艺女青年", "img": "2204.jpg"}
+
+		},
+
+		{
+			"id":23,
+			"title": "四种睡觉姿势，我最喜欢？",
+			"optionA":{"name": "侧躺，面朝左", "img":"2301.jpg"},
+			"optionB":{"name":"侧躺，面朝右", "img":"2302.jpg"},
+			"optionC":{"name":"仰望星空四脚朝天", "img": "2303.jpg"},
+			"optionD":{"name":"俯视大地肚皮朝下", "img": "2304.jpg"}
+
+		},
+
+		{
+			"id":24,
+			"title": "四个口头禅，我最喜欢？",
+			"optionA":{"name": "呵呵", "img":"2401.jpg"},
+			"optionB":{"name":"卧槽", "img":"2402.jpg"},
+			"optionC":{"name":"滚犊子", "img": "2403.jpg"},
+			"optionD":{"name":"什么鬼", "img": "2404.jpg"}
+
+		},
+
+		{
+			"id":25,
+			"title": "四个上大号的消遣，我最喜欢？",
+			"optionA":{"name": "玩手机", "img":"2501.jpg"},
+			"optionB":{"name":"看报刊", "img":"2502.jpg"},
+			"optionC":{"name":"哭晕", "img": "2503.jpg"},
+			"optionD":{"name":"专心便便", "img": "2504.jpg"}
+
+		},
+
+		{
+			"id":26,
+			"title": "四种音乐类型，我最喜欢？",
+			"optionA":{"name": "摇滚", "img":"2601.jpg"},
+			"optionB":{"name":"民谣", "img":"2602.jpg"},
+			"optionC":{"name":"流行乐", "img": "2603.jpg"},
+			"optionD":{"name":"舞曲", "img": "2604.jpg"}
+
+		}
+
+	]
+}

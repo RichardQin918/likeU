@@ -1,0 +1,23 @@
+/*
+ Created with Sublime Text 2.
+ User: MengPeng
+ Date: 01/11/16
+ Time: 14:30 AM
+ Desc: 处理回复请求
+ */
+
+
+/**
+ * generate the response   生成标准的回复请求格式
+ * @param  {object/json} data    original data
+ * @param  {object/json} messageInfo  message
+ * @param  {string} resCode response status code
+ * @return {object}         warpped response data
+ */
+exports.generateRes = function (data, resCode, messageInfo) {
+    return {
+        status  : resCode,
+        message : messageInfo,
+        data    : data
+    };
+};

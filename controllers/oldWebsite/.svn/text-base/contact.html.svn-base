@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="no" />
+	<title>广州炒米信息科技有限公司</title>
+	<link rel="stylesheet" href="/css/base.css">
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=B4dc1823a8f807d11cbdf19294048860"></script>
+
+</head>
+<body data-page="contact" class="no-hide news">
+
+
+
+
+<div class="s-head">
+	<div class="s-head-wrap">
+		<div class="fl">
+			<img src="/images/logo-2.png" alt="" class="fl logo-img">
+			<span class="title fl">
+				联系我们
+			</span>
+		</div>
+		<div class="fr">
+			<a class="fl home" href="/index.html"><img class="fl" src="/images/home.png" alt=""><span class="fl">首页</span></a>
+		</div>
+	</div>
+</div>
+
+<div class="section s-section news-section">
+	<div class="chat fl a-p about">
+		<div class="news-wrap about-wrap">
+			<h3>
+				<span>商务合作</span><b></b>
+			</h3>
+		</div>
+		<ul class="contact-infon">
+			<li class="contact-name">卢先生</li>
+			<li class="contact-phone">13824435823</li>
+			<li class="contact-mail"><a href="mailto:67161860@qq.com">67161860@qq.com</a></li>
+		</ul>
+
+
+
+		<div class="news-wrap about-wrap">
+			<h3>
+				<span>综合咨询</span><b></b>
+			</h3>
+		</div>
+		<ul class="contact-infon">
+			<li class="contact-name">陈小美</li>
+			<li class="contact-phone">020-32215263   22098321</li>
+			<li class="contact-mail"><a href="mailto:hr@tomygo.cn">hr@tomygo.cn</a></li>
+		</ul>
+
+
+
+		<div class="news-wrap about-wrap">
+			<h3>
+				<span>公司地址</span><b></b>
+			</h3>
+		</div>
+		<div class="address-tap">
+			广州炒米信息科技有限公司
+			<div class="address-tap-but">
+				<ul>
+					<li class="this-address" data-map="map-1">
+						黄埔大道办公室
+					</li>
+					<li data-map="map-2">
+						科学城办公室
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="map-1 map">
+			<div id="map" class="map-wrap">
+				
+			</div>
+			<img width="600px"  height ="400px" src="/images/address1.png" alt="">
+			<ul class="map-address">
+				<li class="map-address-c">广州市天河区黄埔大道207号海景花园B栋202房</li>
+				<li class="map-address-p">公交路线：
+					<span>程介村（137，140，218，239，243，261，278，40，43，44，496，506，517，518，53，541，547，548，550，562，882，901A，B11，B15，B22，大学城4线）</span>
+				</li>
+				<li class="map-address-s">地铁路线：5号线员村站</li>
+			</ul>
+		</div>
+
+		<div class="map-2 map">
+			<div id="map2" class="map-wrap">
+				
+			</div>
+			<img width="600px"  height ="400px" src="/images/address2.png" alt="">
+			<ul class="map-address">
+				<li class="map-address-c">广州市萝岗区彩频路广东软件科学园B栋501E</li>
+				<li class="map-address-p">公交路线：
+					<span>广东软件园（320，364，388，396，448，506，508，573，574，578，581，945，B22，高峰快线32，科学城环线1，科学城环线3）</span>
+				</li>
+				<li class="map-address-s">地铁路线：未开通</li>
+			</ul>
+		</div>
+
+
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+<!--footer-->
+	<div class="footer container-h container-h-2">
+			<p class="copyright">
+				炒米科技     Copyright 2015       备案号：粤ICP备15099825号
+			</p>
+</div>
+
+<div class="show-img">
+	<div class="show-wrap">
+		<img src="" alt="">
+		<div class="close"></div>
+	</div>
+</div>
+<div class="zz"></div>
+
+
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map2 = new BMap.Map("map2"); 
+      map.centerAndZoom(new BMap.Point(113.380167,23.125562),18);
+      map2.centerAndZoom(new BMap.Point(113.380167,23.125562),18);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom();
+      map2.enableScrollWheelZoom();
+      map2.enableKeyboard();
+      map2.enableDragging();
+      map2.enableDoubleClickZoom();
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"我的备注",title:"炒米科技",imageOffset: {width:0,height:3},position:{lat:23.127116,lng:113.379412}}
+      ];
+      var markers2 = [
+        {content:"我的备注",title:"炒米科fdf技",imageOffset: {width:0,height:3},position:{lat:23.127116,lng:113.379412}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+      for(var index = 0; index < markers2.length; index++ ){
+        var point = new BMap.Point(markers2[index].position.lng,markers2[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers2[index].imageOffset.width,markers2[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers2[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers2[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map2.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      map2.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      map2.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+      map2.addControl(overviewControl);
+    }
+    var map;
+    var map2;
+      initMap();
+  </script>
+
+
+<!--script-->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/plug.js"></script>
+	<script src="/js/view.js"></script>
+</body>
+</html>

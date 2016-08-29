@@ -1,0 +1,177 @@
+var express = require('express');
+var router = express.Router();
+var fs = require('fs');
+/*var multiparty = require('multiparty');*/
+var util = require('util');
+var request = require('request');
+var auth = require('../../controllers/game/likeU/auth');
+<<<<<<< .mine
+var config = require('../../config/game/likeU/config');
+=======
+var wxapi = require('../../utils/wxapi');
+>>>>>>> .r6084
+var router = express.Router();
+var API = require('wechat-api');
+var fs = require('fs');
+
+<<<<<<< .mine
+// var Questions = require('../../config/game/likeU/question');
+=======
+
+var _url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx171b34dbe80e67f5&redirect_uri=http://www.cume.cc/gamePage/likeU/start?no=123&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect';
+router.get('/index', function(req, res, next) {
+	res.render('game/index.html');
+});
+>>>>>>> .r6084
+
+var _url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx171b34dbe80e67f5&redirect_uri=http://www.cume.cc/gamePage/likeU/start?no=123&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect';
+// var deasync = require("deasync");
+
+var app_id = config.likeU.app_id;
+var app_secret = config.likeU.app_secret;
+var api = new API(app_id, app_secret);
+
+var getToken = require('../../utils/likeUapi').wxGetAccessToken;
+
+var getRandom = require('../../utils/likeUapi').getRandom;
+
+//likeU
+router.get('/likeU', function(req, res, next) {
+	res.redirect(_url);
+});
+	
+
+router.get('/likeU/start', function(req, res, next) {
+	//获取code
+	var code = req.query.code;
+	// var code = config.likeU.code;
+
+	console.log("the code is " + code)
+
+	var token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx171b34dbe80e67f5&secret=c4bd689e38d38afff7e88290e59d73c7&code='+code+'&grant_type=authorization_code';
+	var _res = res;
+
+<<<<<<< .mine
+	//获取accessToken
+	var token = getToken();
+	// console.log("result is " + JSON.stringify(token));
+=======
+// router.get('/love', function(req, res, next) {
+//   	var code = req.query.code;
+//   	res.render('love/index.html',{code:code});
+// });
+>>>>>>> .r6084
+
+<<<<<<< .mine
+	//获取openid
+=======
+//likeU
+router.get('/likeU', function(req, res, next) {
+	// var code = req.query.code;
+	// if (!code){
+	// 	alert(code)
+	// 	res.redirect(_url);
+	// };
+	// else {
+	// 	res.redirect('www.cume.cc/gamePage/likeU/start');
+	// };
+		res.redirect(_url);
+});
+	
+>>>>>>> .r6084
+
+<<<<<<< .mine
+	request.get(token_url, function(error, res, body) {
+		var tokenObj = JSON.parse(body);
+		var openid = tokenObj.openid;
+		console.log("this is openid" + JSON.stringify(openid));
+
+    //获取myInfo
+    var user_url = 'https://api.weixin.qq.com/sns/userinfo?access_token='+token+'&openid='+openid;
+    console.log("user_url  is" + user_url);
+    request.get(user_url, function(error, res, body) {
+    	if(!error){
+    		console.log("this is the body" + body + typeof(body));
+    		console.log('we are here!');
+			_res.render('game/likeU/start.html',{myInfo:JSON.parse(body),errMessage:""});
+    	}
+    });
+    });	
+=======
+router.get('/likeU/start', function(req, res, next) {
+	var code = req.query.code;
+	var _res = res;
+	var token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx171b34dbe80e67f5&secret=c4bd689e38d38afff7e88290e59d73c7&code='+code+'&grant_type=authorization_code';
+	request.get(token_url, function(error, res, body) {
+	    var tokenObj = JSON.parse(body);
+	    // var tokenObj = wxapi.wxGetAccessToken.token;
+	    var user_url = 'https://api.weixin.qq.com/sns/userinfo?access_token='+tokenObj.access_token+'&openid='+tokenObj.openid;
+	    request.get(user_url, function(error, res, body) {
+	    	if(!error){
+	    		console.log(body);
+				_res.render('game/likeU/start.html',{myInfo:JSON.parse(body),errMessage:""});
+	    	}
+	    });	
+	  });
+	//res.render('hardware/loading.html',{userInfo:null,errMessage:"获取用户信息失败，请退出再重试"});
+>>>>>>> .r6084
+});
+// });
+
+<<<<<<< .mine
+
+	//res.render('hardware/loading.html',{userInfo:null,errMessage:"获取用户信息失败，请退出再重试"});
+
+=======
+
+
+>>>>>>> .r6084
+router.get('/likeU/make', function(req, res, next) {
+	
+	//取随机四组
+	var questions = [];
+	var q_list = getRandom([0,1,2,3,4,5,6,7,8,9,10,11],1,11);
+	console.log("this is the question list" + q_list);
+
+	//取所有问题
+	fs.readFile("./config/game/likeU/question.json", "utf8", function(error, data){ 
+		if(error) throw error;
+
+		//随机选取一个问题
+		questions .push(JSON.stringify(JSON.parse(data).question[q_list]));
+		console.log("the chosen question is" + questions)
+		res.render('game/likeU/make.html', {
+		questions: JSON.parse(questions)
+	});
+	});
+});
+
+
+
+router.get('/likeU/share', function(req, res, next) {
+	res.render('game/likeU/share.html');
+});
+
+
+router.get('/likeU/end', function(req, res, next) {
+	res.render('game/likeU/end.html');
+});
+
+<<<<<<< .mine
+
+
+
+=======
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> .r6084
+module.exports = router;

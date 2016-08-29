@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app="App" class="{{isYellow?'yellow':'pink'}}">
+<head>
+	<meta charset="UTF-8">
+	<meta content="chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="cache-control" max-age="0" content="public">
+	<title>我最喜欢你</title>
+
+	<link rel="stylesheet" href="../css/all.css?V12">
+	<link rel="stylesheet" href="../css/libs/base.css">
+</head>
+<body>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="end">
+<head>
+	<meta charset="UTF-8">
+	<title>Facein有奖问卷</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<link rel="stylesheet" href="../../game/css/question.css">
+</head>
+<body>
+	<div class="end-container">
+		<h2>
+			<b>恭喜你，完成了所有的问卷内容！</b>
+			答题卡点赞数最高前三位可获得价值￥769的手机照片打印机一台（LG PD239）
+		</h2>
+		<div class="fw pr">
+			<span class="user-name pa"></span>
+			<img class="fl" src="../../game/images/question/end-top.png" alt="">
+		</div>
+		<div class="end-body">
+			<div class="fw end-wrap">
+				<div class="fl end-tou">
+					<img src="../../game/images/question/tou.png" class="tou" alt="">
+				</div>
+				<div class="fl end-text">
+					<div class="end-tt">
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="like">
+				帮忙点赞吧→<span class="xin"></span> <span class="xin-num">0</span>
+			</div>
+		</div>
+		<div class="fw">
+			<img class="fl" src="../../game/images/question/end-bottom.png" alt="">
+		</div>
+		<div class="index-bnt">
+			<a href="rank" class="index-bnt-1"><img src="../../game/images/question/index-bnt-4.png" alt=""></a>
+			<a href="javascript:void(0)" class="share index-bnt-2"><img src="../../game/images/question/tell.png" alt=""></a>
+		</div>
+	</div>
+
+	<div class="ios-tip phone-tip">
+		<div class="zz"></div>
+		<img src="../../game/images/question/ios.png" alt="">
+	</div>
+
+	<div class="android-tip phone-tip">
+		<div class="zz"></div>
+		<img src="../../game/images/question/android.png" alt="">
+	</div>
+
+
+	<div class="tip">
+		<div class="zz"></div>
+		<div class="tip-container">
+			<h2>提示</h2>
+			<p>请您先答完这题</p>
+			<div class="bnt">
+				<a class="close" href="javascript:void(0)">我知道了</a>
+			</div>
+		</div>
+	</div>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="../../website/js/libs/jquery/dist/jquery.min.js"></script>
+	<script src="../../game/js/jquery.json-2.4.min.js"></script>
+	<script src="../../game/js/question.js"></script>
+</body>
+</html>

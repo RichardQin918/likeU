@@ -1,0 +1,17 @@
+{
+	"likeU": {
+		"app_id": "wx171b34dbe80e67f5",
+		"app_secret": "c4bd689e38d38afff7e88290e59d73c7",
+		"code": "0313a2c60bbd90310291b40dd0ba6f7r",
+		"nickname": "Richard Q",
+		"headimgurl": "http://wx.qlogo.cn/mmopen/89iacFibkEH5U6FDr7e5nbudYW7RFORDXgN8bf08cnZbCQP8R1r42HqaFFvWicic2dhic1NIvoKudf2YkZ8wDLIaPGf5bGdry6TqQ/0",
+		"openid": "oLMDOt8nggmqgv7X-g_fWZkVsC4s",
+		"sex": 1
+	},
+	"mysql": {
+		"host": "localhost",
+		"user": "root",
+		"password": "qinziming",
+		"database": "test"
+	}
+}

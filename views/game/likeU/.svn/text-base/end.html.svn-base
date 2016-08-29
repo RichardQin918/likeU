@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>结果界面</title>
+	<meta content="chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="cache-control" max-age="0" content="public">
+<!-- <link rel="stylesheet" href="../../game/css/comlikeU/mon.css?V12"> -->
+<link rel="stylesheet" href="../../game/css/likeU/all.css?V12">
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+</head>
+<style>
+		.page,.scan-result-wrap{
+		overflow-x:hidden; 
+		position: relative;
+		width: 100%;
+	}
+	.people-title{
+		left: 0;
+	}
+</style>
+<body>
+
+<div style="position: relative">
+	
+	<div  alt=""><img src="../../game/images/likeU/ios.png"  id="shareIos" alt=""></div>
+	<div  alt=""><img src="../../game/images/likeU/android.png"  id="shareAndroid" alt=""></div>
+	
+	<div class="people2">
+		<img id="MakerHeadimg" alt="">
+	</div>
+
+	<div class="title2" >
+		<!-- <div class="grade"> -->
+		<div class="grade">
+			<img src="../../game/images/likeU/main/medal-big.png"alt="">
+			<span id="grade"></span>
+		</div>
+		<img src="../../game/images/likeU/main/title4.png"alt="">
+	</div>
+	<% var base_url = '/' %>
+	<div class="btn3">
+		<a id="sharePage"><img src="../../game/images/likeU/main/btn-share.png" id="share" alt="" ><span id = "shareClick"></span></a>
+	</div>
+	<div class="btn4">
+		<a href="<%=base_url + 'gamePage/likeU/start?mode=start'%>"><img src="../../game/images/likeU/main/btn-edit.png" alt="" ></a>
+	</div>
+
+		<div class="comment2">
+			<p>你答对了我100%的题目 我最喜欢你哦^ ^ </p>
+			<h2 id="MakerName"></h2>
+		</div>
+	<div class="review">
+			<img src="../../game/images/likeU/main/arrow2.png" class="pa arrow-l" alt="">
+			<p>真爱在此</p>
+			<img src="../../game/images/likeU/main/arrow1.png" class="pa arrow-r" alt="">
+	</div>
+
+	<div class="message">
+		<div class="board">
+			<img src="../../game/images/likeU/main/board/board_01.png" class="board_head" alt="">
+			
+			<div class="list_body">
+				<ul id= "commentList">
+					<li>
+
+						<img src="../../game/images/likeU/main/160.png" class="reviewer" alt="">
+						<a href="<%=base_url + 'photocomb/index.html'%>"><img src="../../game/images/likeU/main/btn-download.png" class="download"alt="" ></a>
+						<h4 style="color:#bc8000">Facein<font style="font-weight:normal; font-size:50%" id = "facein">-照片识别整理</font></h4>
+						<!-- <h5 style="color:#bc8000">comments</h5> -->
+						<img src="../../game/images/likeU/main/divider.png" class="divider" alt="">
+					</li>
+					<!-- <li>
+						<img src="../../game/images/likeU/main/PORTRAIT.png" id = "TakerHeadimg" class="reviewer" alt="">
+
+						<div class="others_grade">
+							
+							<span id="grade2"></span>
+						</div>
+						<h4 style="color:#bc8000" id="TakerName" >name</h4>
+						<h5 style="color:#bc8000">comments</h5>
+						<img src="../../game/images/likeU/main/divider.png"class="divider" alt="">
+					</li> -->
+					
+				</ul>
+			</div>
+			<img src="../../game/images/likeU/main/board/board_03.png" class="board_tail" alt="">
+		</div>
+	</div>
+
+</div>
+<script src="../../hardware/js/libs/zepto/zepto.min.js"></script>
+<script src="../../website/js/libs/jquery/dist/jquery.min.js"></script>
+<script src="../../game/js/likeU/controllers/end.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="no" />
+	<title>广州炒米信息科技有限公司</title>
+	<link rel="stylesheet" href="css/base.css">
+
+</head>
+<body data-page="goAhead" class="no-hide">
+
+
+
+
+<div class="s-head">
+	<div class="s-head-wrap">
+		<div class="fl">
+			<img src="images/logo-2.png" alt="" class="fl logo-img">
+			<span class="title fl">
+				在路上
+			</span>
+		</div>
+		<div class="fr">
+			<a class="fl home" href="index.html"><img class="fl" src="images/home.png" alt=""><span class="fl">首页</span></a>
+		</div>
+	</div>
+</div>
+
+<div class="section">
+	<div class="ahead-wrap fl">
+		<div class="item">
+			<div class="item-l t-c fl">
+				<p>未完待续 </p>
+				<b class="dian s-dian"></b>
+			</div>
+			<div class="item-r fl first-item-r">
+				<p class="s-p">未完待续 </p>
+			</div>
+		</div>
+		<!--Item-->
+		<!-- <div class="item">
+			<div class="item-l t-c fl">
+				<p>
+					2015年
+				</p>
+				<p>
+					10月30日
+				</p>
+				<b class="dian"></b>
+			</div>
+			
+			<div class="item-r fl" data-last="200">
+				<div class="p-wrap">
+					<span class="jiao"></span>
+					<div class="p">
+						<p>炒米发布V1.0.1</p>
+						<p>XXXXXXXXXXX</p>
+						<p>XXXXXXX</p>
+						<div class="p-time">
+							2015-11-1 18:22
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!--Item-->
+		<div class="item">
+			<div class="item-l t-c fl">
+				<p>
+					2015年
+				</p>
+				<p>
+					10月30日
+				</p>
+				<b class="dian"></b>
+			</div>
+			<!--data-last表示这次发布和前一次发布时间差-->
+			<div class="item-r fl" data-last="190">
+				<div class="p-wrap">
+					<span class="jiao"></span>
+					<div class="p">
+						<p>照片梳子Android版本V0.0.30发布</p>
+						<p>照片梳子0.0.30内测版本发布，同时发布于炒米科技官方网站、官方公众号、腾讯应用宝市场。</p>						
+						<!-- <div class="p-time">
+							2015-11-1 18:22
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-l t-c fl">
+				<p>
+					2015年
+				</p>
+				<p>
+					8月1日
+				</p>
+				<b class="dian"></b>
+			</div>
+			<!--data-last表示这次发布和前一次发布时间差-->
+			<div class="item-r fl" data-last="120">
+				<div class="p-wrap">
+					<span class="jiao"></span>
+					<div class="p">
+						<p>炒米科技</p>
+						<p>炒米科技研发中心正式成立，经公司授权正式启动照片梳子APP产品研发，照片梳子是一个基于机器视觉识别技术进行照片多维度分析整理的便捷实用工具。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="erwei-wrap fl">
+		<img src="images/qrcode_for_chooseme.jpg" alt="">
+		<img src="images/qrcode_for_download.png" alt="">
+	</div>
+</div>
+<div class="t-c load">
+	<img src="images/loading.gif" alt="">
+</div>
+
+
+
+
+
+
+
+<!--footer-->
+	<div class="footer container-h container-h-2">
+		
+			<p class="copyright">
+				炒米科技     Copyright 2015       备案号：粤ICP备15099825号
+			</p>
+</div>
+
+
+
+
+<!--script-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/plug.js"></script>
+	<script src="js/view.js"></script>
+</body>
+</html>

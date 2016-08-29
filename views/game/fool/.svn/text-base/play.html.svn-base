@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="findex">
+<head>
+	<meta charset="UTF-8">
+	<title>寻宝大作战</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<link rel="stylesheet" href="../../game/css/fool.css">
+	<style>
+	.page-2{
+		display: none;
+	}
+	</style>
+</head>
+<body style="" data-bg="../../game/images/fool/b<%=r %>.jpg">
+	<div class="page-1">
+			<img src="../../game/images/fool/i-bg-2.png" class="pa i-bg-2" alt="">
+		<div class="pa i-bnt fw">
+			<a class="to-d" href="javascript:void(0)"><img src="../../game/images/fool/i-bnt-kong.png" class="fl" alt=""></a>
+		</div>
+	</div>
+	<div class="tere page-2" style="opacity:0">
+			<div class="bg-wrap pf" style="background:url(../../game/images/fool/b<%=r %>-m.jpg) center;background-size:auto 100%"></div>
+		<div class="top pa">
+			<img src="../../game/images/fool/top-<%=p %>.png" alt="">
+		</div>
+		<div class="f-z pa">
+			<div class="f-z-wrap pr">
+				<div class="n-1 pa">1</div>
+				<div class="n-2 pa">2</div>
+				<div class="n-3 pa">3</div>
+				<div class="n-4 pa">4</div>
+				<div class="n-5 pa">5</div>
+				<div class="n-6 pa">6</div>
+				<div class="n-7 pa">7</div>
+				<div class="n-8 pa">8</div>
+				<div class="n-9 pa">9</div>
+				<div class="n-10 pa">10</div>
+				<div class="n-11 pa">11</div>
+				<div class="n-12 pa">12</div>
+				<div class="n-13 pa">13</div>
+				<div class="n-14 pa">14</div>
+				<div class="n-15 pa">15</div>
+				<div class="n-16 pa">16</div>
+				<div class="n-17 pa">17</div>
+				<img src="../../game/images/fool/x1.png" class="pa x1" alt="">
+				<img src="../../game/images/fool/x2.png" class="pa x2" alt="">
+				<img src="../../game/images/fool/x3.png" class="pa x3" alt="">
+				<img src="../../game/images/fool/x4.png" class="pa x4" alt="">
+				<img src="../../game/images/fool/x5.png" class="pa x5" alt="">
+				<img src="../../game/images/fool/x6.png" class="pa x6" alt="">
+				<img src="../../game/images/fool/x7.png" class="pa x7" alt="">
+				<img src="../../game/images/fool/x8.png" class="pa x8" alt="">
+				<img src="../../game/images/fool/x9.png" class="pa x9" alt="">
+				<img src="../../game/images/fool/x10.png" class="pa x10" alt="">
+				<img src="../../game/images/fool/x11.png" class="pa x11" alt="">
+				<img src="../../game/images/fool/x12.png" class="pa x12" alt="">
+				<img src="../../game/images/fool/x13.png" class="pa x13" alt="">
+				<img src="../../game/images/fool/x14.png" class="pa x14" alt="">
+				<img src="../../game/images/fool/x15.png" class="pa x15" alt="">
+				<img src="../../game/images/fool/x16.png" class="pa x16" alt="">
+			</div>
+		</div>
+
+		<div class="bottom pa">
+			<div class="pr">
+				<img src="../../game/images/fool/kuan-1.png" class="pa b-img-1" alt="">
+				<img src="../../game/images/fool/kuan-2.png" class="pa b-img-2" alt="">
+				<img src="../../game/images/fool/kuan-3.png" class="pa b-img-3" alt="">
+				<img src="../../game/images/fool/kk-1.png" class="pa kk-1 kk" alt="">
+				<img src="../../game/images/fool/kk-2.png" class="pa kk-2 kk" alt="">
+				<div class="t-1 t-t pa">TIPS:按顺序点击数字，破译藏宝图的密码</div>
+				<img src="../../game/images/fool/back.png" class="pa b-bnt-1 b-bnt" alt="">
+				<img src="../../game/images/fool/null.png" class="pa b-bnt-2 b-bnt" alt="">
+				<img src="../../game/images/fool/send.png" class="pa b-bnt-3 b-bnt" alt="">
+				<img src="../../game/images/fool/kuan-kong.png" class="" alt="">
+				<img src="../../game/images/fool/kuan-kong-2.png" class="kong-2" alt="">
+			</div>
+		</div>
+
+		<div class="zz"></div>
+		<img src="../../game/images/fool/s-p-q.png" class="pf s-t" alt="">
+		<img src="../../game/images/fool/s-p-q-2.png" class="pf s-t-1" alt="">
+	</div>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="../../website/js/libs/jquery/dist/jquery.min.js"></script>
+	<script>
+	$(function(){
+		$(".tere").animate({
+			"opacity" : 1
+		},200);
+		//获取签名
+		var signA = {};
+		$.ajax({
+		    url: "/game/foolGetSign",    //请求的url地址
+		    async: false, //请求是否异步，默认为异步，这也是ajax重要特性
+		    type: "GET",  
+		    success: function(req) {
+		        //请求成功时处理
+		        console.log(req);
+		        signA = req;
+		    },
+		    complete: function() {
+		        //请求完成的处理
+		    },
+		    error: function() {
+		        //请求出错处理
+		    }
+		});
+
+		//配置接口
+		wx.config({
+		    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+		    appId: "wxb8d8c904d0415c7c", // 必填，公众号的唯一标识
+		    timestamp: signA.timestamp, // 必填，生成签名的时间戳
+		    nonceStr: signA.nonceStr, // 必填，生成签名的随机串
+		    signature: signA.signature,// 必填，签名，见附录1
+		    jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+		});
+
+		//配置分享模板 
+		wx.ready(function(){
+			//分享到朋友圈
+			wx.onMenuShareTimeline({
+			    title: '听说智商在180之上才能找到', // 分享标题
+			    link: 'http://www.cume.cc/gamePage/fool/play', // 分享链接
+			    imgUrl: 'http://www.cume.cc/game/images/fool/loho.jpg', // 分享图标
+			    success: function () { 
+			    	$(".s-t,.zz,.s-t-1").fadeOut(500);
+			    },
+			    cancel: function () { 
+			        $(".s-t,.zz,.s-t-1").fadeOut(500);
+			    }
+			});
+			//分享给朋友
+			wx.onMenuShareAppMessage({
+			    title: '寻宝大作战', // 分享标题
+			    desc: '听说智商在180之上才能找到', // 分享描述
+			    link: 'http://www.cume.cc/gamePage/fool/play', // 分享链接
+			    imgUrl: 'http://www.cume.cc/game/images/fool/loho.jpg', // 分享图标
+			    type: '', // 分享类型,music、video或link，不填默认为link
+			    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+			    success: function () { 
+			        $(".s-t,.zz,.s-t-1").fadeOut(500);
+			    },
+			    cancel: function () { 
+			        $(".s-t,.zz,.s-t-1").fadeOut(500);
+			    }
+			});
+
+		});
+
+
+
+		$(".f-z").height($(window).width()*0.7);
+		$(".f-z-wrap div.pa").css({
+			"height":$(window).width() * 0.07 + "px",
+			"line-height":$(window).width() * 0.07 + "px"
+		});
+		//game			
+		var clickNum = 0;
+		var xianImgNum = 0;
+		var canNotC = false;
+		var playOn = function(){
+			$(".f-z-wrap div.pa").eq(clickNum).addClass("pa-right");
+			if(clickNum != 0){
+				$(".f-z-wrap img.pa").eq(clickNum-1).show();
+			}
+			clickNum += 1;
+			xianImgNum += 1;
+		};
+
+		var playOff = function(_item){
+			_item.addClass("pa-wrong");
+			var a = window.setInterval(function(){
+				_item.removeClass("pa-wrong");
+				window.clearInterval(a);
+			}, 1000);
+		};
+
+		var playBack = function(){
+			$(".f-z-wrap div.pa").eq(clickNum-1).removeClass("pa-right");
+			if(clickNum != 0){
+				$(".f-z-wrap img.pa").eq(clickNum-2).hide();
+			}
+			clickNum -= 1;
+			xianImgNum -= 1;
+		};
+		var palyEnd = function(){
+			$(".f-z-wrap div.pa").addClass("shan");
+			var b = window.setInterval(function(){
+				$(".f-z-wrap div.pa").removeClass("shan");
+				window.clearInterval(b);
+			}, 1000);
+
+
+			var c = window.setInterval(function(){
+				//改变提示
+				$(".t-1").text("想想这是什么图案？再想想再想想");
+				window.clearInterval(c);
+			}, 1500);
+
+			var d = window.setInterval(function(){
+				//改变提示
+				$(".t-1").text("看，顶部有提示！");
+				$(".bg-wrap").fadeIn(500);
+				window.clearInterval(d);
+			}, 4500); 
+  
+			var d1 = window.setInterval(function(){
+				$(".f-z-wrap .pa").fadeOut(1000);
+				$(".top").css({
+					"top" : - $(".top").height() + "px",
+					"display" : "block",
+					"opacity" : 0
+				});
+				$(".top").animate({
+					"top" : 0,
+					"opacity" : 1
+				});
+				canNotC = true;
+				window.clearInterval(d1);
+			}, 5000);
+
+			var e = window.setInterval(function(){
+				$(".f-z-wrap").addClass("f-z-wrap-s")
+				window.clearInterval(e);
+			}, 5500);
+			var f = window.setInterval(function(){
+				$(".b-img-1,.b-img-2").hide();
+				$(".t-1").text("");
+				$(".b-bnt").hide();
+				$(".b-bnt-3").hide();
+				$(".b-img-3,.kk").show();
+				$(".bottom .pr").css({
+					"margin-bottom":"10px"
+				});
+				window.clearInterval(f);
+			}, 10000);
+		};
+
+		$(".f-z-wrap").on("click","div.pa",function(){
+			
+			if($(this).hasClass("pa-right")) return ;
+
+			if(clickNum == $(this).text() - 1){
+				playOn();
+			}else{
+				playOff($(this));
+			}
+
+			if(clickNum == 2) {
+				$(".b-bnt-1").show();
+			}
+
+			if(clickNum == 17){
+				palyEnd();
+			}
+		});
+
+		$(".b-bnt-1").click(function(){
+			if(clickNum == 1) return;
+			if(clickNum != 17){
+				playBack();
+			};
+			if(canNotC){
+				$(".b-img-1").css({
+					"opacity" : 0
+				});
+				$(".b-img-2").css({
+					"opacity" : 1
+				});
+				$(".b-bnt-1").hide();
+				$(".b-bnt-2").show();
+			}
+		});
+
+		$(".kk-1").click(function(){
+			var ia = true;
+			var ua = navigator.userAgent.toLowerCase();	
+			if (/iphone|ipad|ipod/.test(ua)) {
+				    ia = false;		
+			} else if (/android/.test(ua)) {
+				    ia = true;	
+			}
+
+			if(ia){
+				$(".s-t,.zz").fadeIn(500);
+			}else{
+				$(".s-t-1").fadeIn(500);
+			}
+		});
+
+		$(".kk-2").click(function(){
+			window.location.href="http://www.cume.cc/mobile/photocomb.html";
+		});
+
+		$(".s-t,.s-t-1,.zz").click(function(){
+			$(".s-t,.s-t-1,.zz").fadeOut(500);
+		});
+
+		$(".to-d").click(function(){
+			$(".page-1").hide();
+			$(".page-2").fadeIn();
+			$("body").css({
+				"background" : "url("+$("body").attr("data-bg")+") center",
+				"background-size": "auto 100%"
+			});
+		});
+	});
+	</script>
+</body>
+</html>

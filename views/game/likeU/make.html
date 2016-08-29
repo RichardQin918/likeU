@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>我们的友谊小船会翻嘛？</title>
+	<!-- <meta content="chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="cache-control" max-age="0" content="public"> -->
+<link rel="stylesheet" href="../../game/css/likeU/all.css?V12">
+<style>
+		.page,.scan-result-wrap{
+		overflow-x:hidden; 
+		position: relative;
+		width: 100%;
+	}
+	.people-title{
+		left: 0;
+	}
+</style>
+<body>
+<input type="hidden" value="<%=question1%>" id="question1">
+<input type="hidden" value="<%=question2%>" id="question2">
+<input type="hidden" value="<%=question3%>" id="question3">
+<input type="hidden" value="<%=question4%>" id="question4">
+<input type="hidden" value="<%=question5%>" id="question5">
+<input type="hidden" value="<%=qbak1%>" id="qbak1">
+<input type="hidden" value="<%=qbak2%>" id="qbak2">
+<input type="hidden" value="<%=qbak3%>" id="qbak3">
+<input type="hidden" value="<%=qbak4%>" id="qbak4">
+<input type="hidden" value="<%=qbak5%>" id="qbak5">
+<input type="hidden" value="<%=qbak6%>" id="qbak6">
+<input type="hidden" value="<%=qbak7%>" id="qbak7">
+<input type="hidden" value="<%=qbak8%>" id="qbak8">
+<input type="hidden" value="<%=qbak9%>" id="qbak9">
+<input type="hidden" value="<%=qbak10%>" id="qbak10">
+
+<p id="qid" style="display:block"; alt=""></p>
+<!-- <p id="id" style="display:none"; alt=""></p> -->
+	<div class= "option">
+				
+		<div class="table">
+			<img src="../../game/images/likeU/process/table_01.png" class="table_head" alt="">
+			<div class= "option_body_1">
+				<h4  id="title" alt=""><p id="page" alt=""></p></h4>
+				<!-- <h4 id="title" alt=""></h4> -->
+				<div id="choiceList">
+				<ul>
+					<li   class="choice1" >
+						<h6 id="A" class = "qtitle"></h6>
+						<div class="result" style="position:absolute;">
+							<div id="result-2" style="position:absolute;">
+								<img id = "wrong" src="../../game/images/likeU/process/btn-wrong.png" alt="">
+							</div>
+							<img class = "right" src="../../game/images/likeU/process/btn-right.png" alt="">
+							
+						</div>
+						<img id="Aimg" class = "option_img" src="" alt="">	
+					</li>
+
+					<li   class="choice2" >
+						<h6 id="B" class = "qtitle"></h6>
+						<div class="result" style="position:absolute;">
+							<div id="result-2" style="position:absolute;">
+								<img id = "wrong" src="../../game/images/likeU/process/btn-wrong.png" alt="">
+							</div>
+							<img class = "right" src="../../game/images/likeU/process/btn-right.png" alt="">
+						
+						</div>
+						<img id = "Bimg" class="option_img" src="" alt="">
+					</li>
+
+
+					<li   class="choice3" >
+						<h6 id="C" class = "qtitle"></h6>
+						<div class="result" style="position:absolute;">
+							<div id="result-2" style="position:absolute;">
+								<img id = "wrong" src="../../game/images/likeU/process/btn-wrong.png" alt="">
+							</div>
+							<img class = "right" src="../../game/images/likeU/process/btn-right.png" alt="">
+						</div>
+						<img id = "Cimg" class="option_img" src="" alt="">
+					</li>
+
+					<li   class="choice4" >
+						<h6 id="D" class = "qtitle"></h6>
+						<div class="result" style="position:absolute;">
+							<div id="result-2" style="position:absolute;">
+								<img id = "wrong" src="../../game/images/likeU/process/btn-wrong.png" alt="">
+							</div>
+							<img class = "right" src="../../game/images/likeU/process/btn-right.png" alt="">
+						</div>
+						<img id = "Dimg" class="option_img" src="" alt="">
+					</li>
+
+					
+				</ul>
+				</div>
+			</div>
+			
+			<img src="../../game/images/likeU/process/table_03.png"
+			class="table_tail" alt="">
+
+			<% var base_url = '/gamePage/likeU' %>
+			<div class="btn5">
+				<!-- <a id = "random" href="<%=base_url + '/make?mode=shuffle&page=1'%>"><img src="../../game/images/likeU/process/btn-shaffle.png" alt="" ></a> -->
+				<a id= "random"><img src="../../game/images/likeU/process/btn-shaffle.png"   alt="" ></a>
+			</div>
+			<div class="btn5">
+				<a id="retryMakerPage"><img src="../../game/images/likeU/main/btn-retry_answer.png" id = "retry_maker" style="display:none" alt="" ></a>
+			</div>
+			<div class="btn6">
+				<a id = "go_to"><img src="../../game/images/likeU/process/btn-next.png" alt="" ></a>
+				
+			</div>
+
+			<div class="footer ps">
+				<span id="footer"></span>
+			</div>
+		</div>
+	</div>
+
+<!-- <script src="../../hardware/js/libs/zepto/zepto.min.js"></script> -->
+<script src="../../website/js/libs/jquery/dist/jquery.min.js"></script>
+<script src="../../game/js/likeU/controllers/make.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<<<<<<< .mine
+	<meta charset="UTF-8">
+	<title>用户信息</title>
+	<meta content="chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="cache-control" max-age="0" content="public">
+=======
+	<meta charset="UTF-8">
+	<title>分享界面</title>
+	<meta content="chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="cache-control" max-age="0" content="public">
+<!-- <link rel="stylesheet" href="../../game/css/comlikeU/mon.css?V12"> -->
+>>>>>>> .r5817
+<link rel="stylesheet" href="../../game/css/likeU/all.css?V12">
+</head>
+<style>
+		.page,.scan-result-wrap{
+		overflow-x:hidden; 
+		position: relative;
+		width: 100%;
+	}
+	.people-title{
+		left: 0;
+	}
+</style>
+<body>
+
+<<<<<<< .mine
+	
+=======
+<script src="../../hardware/js/libs/zepto/zepto.min.js"></script>
+<script src="../../website/js/libs/jquery/dist/jquery.min.js"></script>
+
+	
+
+>>>>>>> .r5817
+<div style="position: relative">
+	
+	<div class="people3">
+<<<<<<< .mine
+		<img id="head"alt="">
+=======
+		<img id="headimg" alt="">
+>>>>>>> .r5817
+	</div>
+
+	<div class="title1" >
+		<img src="../../game/images/likeU/main/title3.png"  alt="">
+	</div>
+
+	<% var base_url = '/gamePage/likeU' %>
+	<div class="btn1">
+		<a href="<%=base_url + '/share'%>"><img src="../../game/images/likeU/main/btn-share.png" alt="" ></a>
+	</div>
+	<div class="btn2">
+<<<<<<< .mine
+		<a href="<%=base_url%>"><img src="../../game/images/likeU/main/btn-retry.png" alt="" ></a>
+=======
+		<a href="<%=base_url + '/start' %>"><img src="../../game/images/likeU/main/btn-retry.png" alt="" ></a>
+>>>>>>> .r5817
+	</div>
+
+		<div class="comment1 pr">
+		<p>只有答对我题目的人才有资格做朋友</p>
+		<h2 id="name"></h2>
+		</div>
+	<script>
+	$(document).ready(function() {
+		if (localStorage){
+			var myInfo = localStorage.getItem("myInfo");
+			myInfo = JSON.parse(myInfo)
+			// alert(myInfo.headimgurl)
+			// alert(typeof(myInfo.headimgurl))
+			var nickname = myInfo.nickname;
+			var head = myInfo.headimgurl;
+		$("#name").text("-" + nickname);
+		$("#headimg").attr("src", head);
+		// alert($("#headimg").attr("src"))
+		};
+
+<<<<<<< .mine
+<script src="../../hardware/js/libs/zepto/zepto.min.js"></script>
+<script src="../../website/js/libs/jquery/dist/jquery.min.js"></script>	
+	<script>
+=======
+	});
+	</script>
+>>>>>>> .r5817
+
+	$(document).ready(function() {
+		if (localStorage){
+			var myInfo = localStorage.getItem("myInfo");
+			myInfo = JSON.parse(myInfo)
+			// alert(myInfo.headimgurl)
+			// alert(typeof(myInfo.headimgurl))
+			var nickname = myInfo.nickname;
+			var head = myInfo.headimgurl;
+		$("#name").text("-" + "Richard");
+		$("#headimg").attr("src", head);
+		// alert($("#headimg").attr("src"))
+		};
+
+	});
+		
+
+	</script>
+
+
+</div>
+
+	
+
+
+</body>
+</html>

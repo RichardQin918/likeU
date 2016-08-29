@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>开始界面</title>
+	<meta content="chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="cache-control" max-age="0" content="public">
+<link rel="stylesheet" href="../../game/css/likeU/all.css?V12">
+</head>
+<style> 
+		.page,.scan-result-wrap{
+		overflow-x:hidden; 
+		position: relative;
+		width: 100%;
+	}
+	.people-title{
+		left: 0;
+	}
+</style>
+<body>
+<input type="hidden" value="<%=myInfo.nickname%>" id="nickname">
+<input type="hidden" value="<%=myInfo.headimgurl%>" id="headimgurl">
+<input type="hidden" value="<%=myInfo.openid%>" id="openid">
+<input type="hidden" value="<%=myInfo.sex%>" id="sex">
+
+	
+<div style="position: relative">
+	
+	<div class="people3">
+		<img id="headimg" alt="">
+	</div>
+
+	<div class="title1" >
+		<img src="../../game/images/likeU/main/title3.png"alt="">
+	</div>
+<<<<<<< .mine
+	<% var base_url = '/gamePage/likeU' %>
+	<div class="btn7">
+		<a href="<%= base_url + '/make'%>"><img src="../../game/images/likeU/main/btn-start.png" id="start" alt="" ></a>
+	</div>
+	<div class="btn7">
+		<a href="<%= base_url + '/make'%>"><img src="../../game/images/likeU/main/btn-edit.png"  id="edit" alt=""  ></a>
+	</div>
+=======
+	<% var base_url = '/gamePage/likeU' %>
+>>>>>>> .r5817
+	<div class="btn1">
+<<<<<<< .mine
+		<a href="<%=base_url + '/share'%>"><img src="../../game/images/likeU/main/btn-share.png" id="share" alt=""></a>
+=======
+		<a href="<%= base_url + '/make'%>"><img src="../../game/images/likeU/main/btn-start.png" alt="" ></a>
+>>>>>>> .r5817
+	</div>
+	<div class="btn2">
+<<<<<<< .mine
+		<a href="<%=base_url + '/make' %>"><img src="../../game/images/likeU/main/btn-retry.png" id = "retry" alt="" ></a>
+=======
+		<a href="<%= base_url + '/make'%>"><img src="../../game/images/likeU/main/btn-edit.png" alt="" ></a>
+>>>>>>> .r5817
+	</div>
+
+<<<<<<< .mine
+
+	</div>
+
+		<div class="comment1 pr" alt="">
+=======
+		<div class="comment1 pr" alt="">
+>>>>>>> .r5817
+		<p>只有答对我题目的人才有资格做朋友</p>
+		<h2 id="name" alt=""></h2>
+		</div>
+
+</div>
+
+<script src="../../hardware/js/libs/zepto/zepto.min.js"></script>
+<script src="../../website/js/libs/jquery/dist/jquery.min.js"></script>
+	<script>
+	// $(function(){
+	// 	if(!$("#nickname").val()) {
+	// 		$(".message").text("获取用户信息失败，请退出重试!!");
+	// 	}
+	// 	if(!localStorage) {
+
+
+<<<<<<< .mine
+	// 		var myInfo = {
+	// 			nickname : $("#nickname").val(),
+	// 			headimgurl : $("#headimgurl").val(),
+	// 			openid : $("#openid").val(),
+	// 			sex : $("#sex").val()
+	// 		};
+	// 	}
+	// 	else {
+	// 		localStorage.setItem("myInfo",JSON.stringify(myInfo));
+	// 	}
+	// 	// console.log('this is myInfo' + myInfo)
+	// 	});
+
+	$(document).ready(function() {
+		// if(!$("#nickname").val()) {
+		// 	alert("获取用户信息失败，请退出重试!!");
+		// }
+		// alert(localStorage.getItem("myInfo").nickname);
+		// alert(typeof(localStorage.getItem("myInfo").nickname));
+		// alert(JSON.stringify(localStorage));
+		if (localStorage.getItem("myInfo").nickname === "undefined") {
+			// alert('start input');
+
+			var myInfo = {
+				nickname : $("#nickname").val(),
+				headimgurl : $("#headimgurl").val(),
+				openid : $("#openid").val(),
+				sex : $("#sex").val()
+			};
+			localStorage.setItem("myInfo",JSON.stringify(myInfo));
+			// alert("input finished" + JSON.stringify(localStorage));
+		}
+
+		// alert('so far so good')
+		// alert('start setting');
+		var myInfo = localStorage.getItem("myInfo");
+		// alert(myInfo);
+		myInfo = JSON.parse(myInfo);
+		// alert(myInfo.headimgurl)
+		// alert(typeof(myInfo.headimgurl))
+		var nickname = myInfo.nickname;
+		var head = myInfo.headimgurl;
+		$("#name").text("-" + nickname);
+		$("#headimg").attr("src", head);
+		// alert($("#headimg").attr("src"))
+
+		
+		(function($){
+			$.getUrlParam = function(name) {
+			var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+			var r = window.location.search.substr(1).match(reg);
+			if (r!=null) 
+				return unescape(r[2]); return null;
+			}
+		})(jQuery);
+
+		var cue = $.getUrlParam('mode');
+		alert(cue);
+		//切换分享页面
+		if (cue == "share") {
+			$("#share").css('display','block');
+			$("#retry").css('display','block');
+			
+
+			// alert($(".btn1").css('display'));
+		}
+
+		//切换出题页面
+		else if (cue =="edit") {
+			$("#edit").css('display','block');
+		}
+
+		//主页
+		else {
+			$("#start").css('display','block');
+		}
+
+
+		
+	});
+	</script>
+
+
+=======
+	// 		var myInfo = {
+	// 			nickname : $("#nickname").val(),
+	// 			headimgurl : $("#headimgurl").val(),
+	// 			openid : $("#openid").val(),
+	// 			sex : $("#sex").val()
+	// 		};
+	// 	}
+	// 	else {
+	// 		localStorage.setItem("myInfo",JSON.stringify(myInfo));
+	// 	}
+	// 	// console.log('this is myInfo' + myInfo)
+	// 	});
+
+	$(document).ready(function() {
+		// if(!$("#nickname").val()) {
+		// 	alert("获取用户信息失败，请退出重试!!");
+		// }
+		alert($("#nickname").val());
+		alert(JSON.stringify(localStorage));
+		if ($("#nickname").val() == "") {
+			alert('start input');
+			var myInfo = {
+				nickname : $("#nickname").val(),
+				headimgurl : $("#headimgurl").val(),
+				openid : $("#openid").val(),
+				sex : $("#sex").val()
+			};
+			localStorage.setItem("myInfo",JSON.stringify(myInfo));
+			alert("input finished" + JSON.stringify(localStorage));
+		}
+
+		// alert('so far so good')
+		else {
+			alert('start setting');
+			var myInfo = localStorage.getItem("myInfo");
+			myInfo = JSON.parse(myInfo);
+			// alert(myInfo.headimgurl)
+			// alert(typeof(myInfo.headimgurl))
+			var nickname = myInfo.nickname;
+			var head = myInfo.headimgurl;
+			$("#name").text("-" + nickname);
+			$("#headimg").attr("src", head);
+			// alert($("#headimg").attr("src"))
+			}
+		});
+	</script>
+
+
+>>>>>>> .r5817
+</body>
+</html>
