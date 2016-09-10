@@ -10,9 +10,8 @@ var _url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx171b34db
 var app_id = config.likeU.app_id;
 var app_secret = config.likeU.app_secret;
 var weChat_api = new API(app_id, app_secret, function (callback) {
-    // 传入一个获取全局token的方法
+    // get token globally 
     fs.readFile('./cache/access_token.txt', 'utf8', function (err, txt) {
-        // logger.info("读取文件中的AccessToken");
         if (err) {
             console.log(err);
             return callback(err);
@@ -22,7 +21,7 @@ var weChat_api = new API(app_id, app_secret, function (callback) {
 }, function (token, callback) {
     // 请将token存储到全局，跨进程、跨机器级别的全局，比如写到数据库、redis等
     // 这样才能在cluster模式及多机情况下使用，以下为写入到文件的示例
-    // logger.info("写入文件中的AccessToken" + JSON.stringify(token));
+    // logger.info("input AccessToken" + JSON.stringify(token));
 
     fs.writeFile('./cache/access_token.txt', JSON.stringify(token), callback);
 });
@@ -42,7 +41,7 @@ exports.index = function(req, res, next){
     var token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx171b34dbe80e67f5&secret=c4bd689e38d38afff7e88290e59d73c7&code='+code+'&grant_type=authorization_code';
     var _res = res;
 
-    //获取并储存token和openid
+    //get token&openid and save them
 
     var token = "", isReturn = false;
     var openid = "";
@@ -71,7 +70,7 @@ exports.index = function(req, res, next){
                     createTime: new Date().getTime() 
                     };  
 
-                    //获取userinfo
+                    //get userinfo
                     // logger.info("this is the data:" + token + openid);
                     var user_url = 'https://api.weixin.qq.com/sns/userinfo?access_token='+token+'&openid='+openid;
                     // logger.info("user_url  is:" + user_url);
@@ -105,7 +104,7 @@ exports.index = function(req, res, next){
                     createTime: new Date().getTime() 
                     };  
 
-                //获取userinfo
+                //get userinfo
                 
                 var user_url = 'https://api.weixin.qq.com/sns/userinfo?access_token='+token+'&openid='+openid;
                 request.get(user_url, function(error, res, body) {

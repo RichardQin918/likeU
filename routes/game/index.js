@@ -20,7 +20,7 @@ var start = require('../../controllers/game/likeU/start');
 var mysql = require('mysql');
 var config = require('../../config/game/likeU/config');
 
-//配置日志
+//set up log4js
 log4js.configure({
     appenders: [
     	{ type: "console" },
@@ -104,68 +104,7 @@ router.get('/likeU/end', function(req, res, next) {
 
 
 
-//有奖问答
-router.get('/question/index', function(req, res, next) {
-	res.render('game/question/index.html');
-});
 
-router.get('/question/answer', function(req, res, next) {
-	var code = req.query.code;
-	var _res = res;
-	if(code){
-		var token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx514e48bb0f27f3fd&secret=12d5511496d2781d7f6ba16bb15d1cf4&code='+code+'&grant_type=authorization_code';
-		request.get(token_url, function(error, res, body) {
-		    var tokenObj = JSON.parse(body);
-		    // var tokenObj = wxapi.wxGetAccessToken.token;
-		    var user_url = 'https://api.weixin.qq.com/sns/userinfo?access_token='+tokenObj.access_token+'&openid='+tokenObj.openid;
-		    request.get(user_url, function(error, res, body) {
-		    	if(!error){
-		    		console.log(body);
-					_res.render('game/question/answer.html',{myInfo:body,errMessage:""});
-		    	}
-		    });	
-		  });
-	}else{
-		_res.render('game/question/answer.html',{myInfo:null,errMessage:""});
-	}
-	
-});
-
-router.get('/question/end', function(req, res, next) {
-	res.render('game/question/end.html');
-});
-
-router.get('/question/share', function(req, res, next) {
-	var code = req.query.code;
-	var _res = res;
-	if(code){
-		var token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx514e48bb0f27f3fd&secret=12d5511496d2781d7f6ba16bb15d1cf4&code='+code+'&grant_type=authorization_code';
-		request.get(token_url, function(error, res, body) {
-		    var tokenObj = JSON.parse(body);
-		    // var tokenObj = wxapi.wxGetAccessToken.token;
-		    var user_url = 'https://api.weixin.qq.com/sns/userinfo?access_token='+tokenObj.access_token+'&openid='+tokenObj.openid;
-		    request.get(user_url, function(error, res, body) {
-		    	if(!error){
-		    		console.log(body);
-					_res.render('game/question/share.html',{myInfo:body,errMessage:""});
-		    	}
-		    });	
-		  });
-	}else{
-		_res.render('game/question/share.html',{myInfo:null,errMessage:""});
-	}
-});
-
-router.get('/question/rank', function(req, res, next) {
-	res.render('game/question/rank.html');
-});
-
-router.get('/question/write', function(req, res, next) {
-	res.render('game/question/write.html');
-});
-router.get('/question/test', function(req, res, next) {
-	res.render('game/question/test.html');
-});
 
 
 

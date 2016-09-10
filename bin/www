@@ -48,27 +48,6 @@ var server = http.createServer(app);
  * Normalize a port into a number, string, or false.
  */
 
-toJSON = require("xlsx-to-json");
-
-//转换Excel文档
-
-// toJSON({
-//     input: "questions.xls",
-//     output: "/config/game/likeU/myq.json",
-// }, function(err, result) {
-//     if(err) {
-//         console.error(err);
-//     } else {
-//         console.log(result);
-//     }
-// });
-
-
-
-
-
-
-
 
 function normalizePort(val) {
     var port = parseInt(val, 10);

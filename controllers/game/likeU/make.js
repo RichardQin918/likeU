@@ -13,19 +13,19 @@ exports.index = function(req, res, next){
 	var logger = log4js.getLogger('make - index');
 	logger.setLevel('INFO');
 
-	//取随机15组数字
+	//get 15 random numbers
 	var qbase = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
 	var questions = [];
 	var qbak = [];
 	var q_list = getRandom(qbase,15,25);
 	logger.info('this is the question list' + q_list);
 
-	//取所有问题
+	//get all questions
 	fs.readFile('./config/game/likeU/question.json', 'utf8', function(error, data){ 
 		if(error) {
 			logger.error(error);
 		}
-		//传递问题
+		//append question list
 		for (var i=0;i<5; i++){
 			p = q_list[i];
 			// logger.info('inputing question' + p);
@@ -69,7 +69,7 @@ exports.inputData = function(req, res, next){
 	log4js.addAppender(log4js.appenders.file('logs/likeU_index.log'), 'make - inputData');
 	var logger = log4js.getLogger('make - inputData');
 	logger.setLevel('INFO');
-	//连接mysql数据库
+	//connect to database
 	var conn = mysql.createConnection({
 		host: config.mysql.host,
 		user: config.mysql.user,
@@ -85,7 +85,7 @@ exports.inputData = function(req, res, next){
 	});
 	conn.query('use ' + config.mysql.database + ';');
 
-	//接受数据并录入数据库
+	//receiving data and store in database
 	var data = req.body;
 	// logger.info("this is data received!:" + JSON.stringify(data));
 	var answerID = '';
@@ -102,7 +102,7 @@ exports.inputData = function(req, res, next){
 	var takerName = data.takername;
 
 
-	//转换数组为字符串
+	//convert array into string
 	var qIDChar = '';
 	var contentChar = '';
 	for (i=0; i < questionID.length; i++){
@@ -125,7 +125,7 @@ exports.inputData = function(req, res, next){
 	// 	logger.info('this is wat in req:' + obj);
 	// }
 	
-	////ANSWER mode 计算分数 
+	////ANSWER mode couunting grade
 	if (data.answerID){
 		answerID = data.answerID;
 		logger.info("this is answerID:" + answerID);
@@ -166,7 +166,7 @@ exports.inputData = function(req, res, next){
 			logger.info("this is maker answer!:" + JSON.stringify(results));
 			answerStr = results[0].Content;
 
-			//转字符串为表格
+			//convert string to table
 			for (i=0; i<answerStr.length;i++){
 				p = answerStr[i];
 				var choice = '';
@@ -181,7 +181,7 @@ exports.inputData = function(req, res, next){
 			logger.info("this is the makerAnswerList & takerAnswerList:" + makerAnswerList + typeof(makerAnswerList) + '&' + content + typeof(content));
 			// logger.info("comparing" + makerAnswerList[0] + ',' + content[0]);
 
-			//比较maker和taker答案, 得出分数
+			//comparing maker and taker answer and get final grade
 			for (i=0; i< makerAnswerList.length; i++){
 				if (makerAnswerList[i] == content[i]){
 					grade = grade + 0.2;
@@ -236,7 +236,7 @@ exports.getQuestion = function(req, res, next){
 	log4js.addAppender(log4js.appenders.file('logs/likeU_index.log'), 'make - getQuestion');
 	var logger = log4js.getLogger('make - getQuestion');
 	logger.setLevel('INFO');
-	//连接mysql数据库
+	//connecting to database
 	var conn = mysql.createConnection({
 		host: config.mysql.host,
 		user: config.mysql.user,
@@ -272,12 +272,12 @@ exports.getQuestion = function(req, res, next){
 		var numberList =[];
 		var qList = [];
 
-		//找出对应问题
+		//find corrsponding question 
 		fs.readFile('./config/game/likeU/question.json', 'utf8', function(error, data){ 
 			if(error) {
 				logger.error(error);
 			}
-			//还原qid题号
+			//fix qid 
 			for (i=0; i<chosenQ.length;i++){
 				p = chosenQ[i];
 				var number = '';
@@ -291,7 +291,7 @@ exports.getQuestion = function(req, res, next){
 				}
 			}
 			// logger.info("this is the number list:" + numberList);
-			//根据题号找出对应问题
+			//find question according to qid
 			for (i=0; i<numberList.length; i++){
 				p = numberList[i];
 				// logger.info('inputing question' + p + 1);

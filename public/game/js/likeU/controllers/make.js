@@ -9,7 +9,6 @@
 
 
 $(document).ready(function() {
-	//获取页数
 	var cue = $.getUrlParam('mode');
 	var creater = $.getUrlParam('creater');
 	var myInfo = localStorage.getItem("myInfo");
@@ -27,8 +26,8 @@ $(document).ready(function() {
 	var otherTakerName = [];
 	var otherTakerHead = [];
 	var otherTakerGrade = [];
+	//maker mode render
 	if (cue == "maker"){
-		//maker模式 操作+渲染
 		var question = $("#question1").val();
 		var page = 1;
 		// alert("we are at page:" + page);
@@ -68,7 +67,7 @@ $(document).ready(function() {
 
 
 
-		//记录题目答案，发送到后台
+		//save maker answer and send to backend 
 		$("#go_to").on("click", function(){
 				
 				answerList .push(makerAnswer);
@@ -125,7 +124,7 @@ $(document).ready(function() {
 
 				$("#qid").text(question.id); 
 
-				//操作+渲染
+				//render
 
 				$("#title").text(page + '.' + question.title);
 					
@@ -142,7 +141,7 @@ $(document).ready(function() {
 					$("#Dimg").attr("src", "../../game/images/likeU/questions/"+question.optionD.img);	
 		
 		});
-		//shuffle 换一换
+		//shuffle 
 		var count = 1;
 		$("#random").on("click",function(){
 			if(page ==1){
@@ -281,9 +280,9 @@ $(document).ready(function() {
 				type: "GET",
                 contentType: "application/json; charset=utf-8",
                 dataType:'json',
-                url: prefix + "/gamePage/likeU/getQuestion",//传入后台的地址/方法
+                url: prefix + "/gamePage/likeU/getQuestion",//send to backend location/function 
                 async: true,
-                data: {"creater": creater},//参数，这里是一个json语句
+                data: {"creater": creater},//parameter，syntax json
                 success: function (data) {
                     alert("this is data:" + JSON.stringify(data) + typeof(data));
                     // alert(data);
@@ -341,7 +340,7 @@ $(document).ready(function() {
 					// alert("done !");
 
 
-					//选择题目答案
+					//choose answer
 					$("#go_to").on("click", function(){
 							
 							
@@ -367,9 +366,9 @@ $(document).ready(function() {
 								type: "POST",
 				                contentType: "application/json; charset=utf-8",
 				                // dataType:'json',
-				                url: prefix + "/game/likeU/inputData",//传入后台的地址/方法
+				                url: prefix + "/game/likeU/inputData",//send to backend location/function 
 				                async: false,
-				                data: JSON.stringify(SendingData),//参数，这里是一个json语句
+				                data: JSON.stringify(SendingData),//parameter, syntax json
 				                success: function (data) {
 				                    alert("data is here :" + data + typeof(data));
 				                    data = JSON.parse(data);
@@ -439,7 +438,7 @@ $(document).ready(function() {
 
 							$("#qid").text(question.id); 
 
-							//操作+渲染
+							//render
 
 							$("#title").text(page + '.' + question.title);
 								

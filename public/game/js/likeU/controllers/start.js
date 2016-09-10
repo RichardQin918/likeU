@@ -9,7 +9,7 @@
 
 function GetRequest() {
   
-  var url = location.search; //获取url中"?"符后的字串
+  var url = location.search; //get string in the url which is after "?"
    var theRequest = new Object();
    if (url.indexOf("?") != -1) {
       var str = url.substr(1);
@@ -28,7 +28,7 @@ $(document).ready(function() {
 	var cue = $.getUrlParam('mode');
 	// alert("this is cue:" + cue);
 
-	//存入（伪造） 到 localStorage数据
+	//input fake data into localstorage
 	var creater = $.getUrlParam('creater');
 	var prefix = '';
 	var server = '';
@@ -71,9 +71,9 @@ $(document).ready(function() {
 
 
 
-	//登陆渲染
+	//login render
 
-	//切换出题完成页面
+	//finish making page
 	if (cue == "finishMake") {
 		$("#share").css('display','block');
 		$("#retry").css('display','block');
@@ -121,13 +121,13 @@ $(document).ready(function() {
 			type: "GET",
             contentType: "application/json; charset=utf-8",
             // dataType:'json',
-            url: prefix + "/game/likeU/getWxConfig",//传入后台的地址/方法
+            url: prefix + "/game/likeU/getWxConfig",//send to backend location/function 
             async: false,
-            data: {"shareURL" : shareURL},//参数，这里是一个json语句
+            data: {"shareURL" : shareURL},//json 
             success: function (data) {
                 alert("this is returnning wxConfig:" + JSON.stringify(data));
 
-                //微信设置
+                //wechat setting
                 // var wxConfig = JSON.stringify(data);
                 // data = JSON.parse(data);
                 var debug = data.debug;
@@ -184,7 +184,7 @@ $(document).ready(function() {
 
 
 
-	//答题用户主页
+	//start answering page
 	if (cue =="startAnswer"){
 		// var temMaker = localStorage.getItem("temMaker");
 		// alert("this is temMaker:" + JSON.stringify(temMaker));
@@ -225,14 +225,14 @@ $(document).ready(function() {
 	}
 
 
-	//切换出题页面
+	//switch to making page
 	if (cue =="edit") {
 		$("#edit").css('display','block');
 	}
 
 
 
-	//出题用户主页
+	//start making page
 
 	if(cue == null){
 		alert("this is the title of the page:" + $('title').text());

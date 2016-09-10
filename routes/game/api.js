@@ -12,7 +12,7 @@ var start = require('../../controllers/game/likeU/start');
 
 
 
-//获取js-sdk签名接口
+//get js-sdk sign API
 router.get('/getJsConfig',function(req,res,next){
 	var _url = req.query._url;
 	var jsonData = {

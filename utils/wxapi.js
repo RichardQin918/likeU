@@ -1,9 +1,9 @@
 /*
  Created with Sublime Text 2.
- User: MengPeng
+ User: Richard Qin
  Date: 01/11/16
  Time: 18:30 PM
- Desc: 微信常用功能
+ Desc: Wechat Function
  */
 "use strict";
 var request = require('request');

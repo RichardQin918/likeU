@@ -33,11 +33,11 @@ exports.wxGetAccessToken = function () {
 };
 
 
-//获取微信accessToken
+//get accessToken
 var _wxGetAccessToken = function(){
     var outputFilename = 'accessTokenCache.txt';
     var token = "", isReturn = false;
-    //读取缓存的accessToke,如果过期，重新获取
+    //read accessToke,if expired，request again
     weChat_api.getLatestToken(function (err, result) {
         console.log("获取token：" + JSON.stringify(result));
         token = result.accessToken;
@@ -59,32 +59,32 @@ var _wxGetAccessToken = function(){
 };
 
 
-//随机选取
-exports.getRandom = function(arr, num, max) { 
-//新建一个数组,将传入的数组复制过来,用于运算,而不要直接操作传入的数组; 
-var temp_array = new Array(); 
-for (var index in arr) { 
-    temp_array.push(arr[index]); 
-} 
-//剔除一些数字
-//取出的数值项,保存在此数组 
-var return_array = new Array(); 
-for (var i = 0; i < num; i++) {
-//判断如果数组还有可以取出的元素,以防下标越界 
-    if (temp_array.length>0) { 
-        //在数组中产生一个随机索引 
-        var arrIndex = Math.floor(Math.random()*temp_array.length); 
-        //将此随机索引的对应的数组元素值复制出来 
-        return_array[i] = temp_array[arrIndex]; 
-        //然后删掉此索引的数组元素,这时候temp_array变为新的数组 
-        temp_array.splice(arrIndex, 1); 
-        } 
-    else { 
-    //数组中数据项取完后,退出循环,比如数组本来只有10项,但要求取出20项. 
-        break; 
+//getRandom
+exports.getRandom = function(arr, num, max) {  
+    //create an array, copy the arr for calculation use.
+    var temp_array = new Array(); 
+    for (var index in arr) { 
+        temp_array.push(arr[index]); 
     } 
-} 
-return return_array; 
+    //delete some numbers
+    //take some number and save it in temp_array
+    var return_array = new Array(); 
+    for (var i = 0; i < num; i++) {
+    //avoid empty array error 
+        if (temp_array.length>0) { 
+            //get random index
+            var arrIndex = Math.floor(Math.random()*temp_array.length); 
+            //copy the number according to index
+            return_array[i] = temp_array[arrIndex]; 
+            //delete the number, so we have a new array
+            temp_array.splice(arrIndex, 1); 
+            } 
+        else { 
+        //exit the loop
+            break; 
+        } 
+    } 
+    return return_array; 
 };
 
 
