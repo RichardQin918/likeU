@@ -1,0 +1,319 @@
+@charset "utf-8";
+/* CSS Document */
+*{-webkit-tap-highlight-color:rgba(255,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-touch-callout: none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,    
+form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;font-family:Helvetica,"Microsoft Yahei","微软雅黑",Arial,sans-serif;} 
+body {
+	 background-color:#fff;
+	-webkit-text-size-adjust: 100%;/*解决Iphone下橱窗字体变大问题*/
+	font-size:16px;
+    
+}
+
+nav, footer, section, header, article, figure {padding: 0;margin: 0;display: block;}
+ul,li {list-style: none;}
+h1,h2,h3,h4,div,li,p,menu,dl,dt,dd{ font-size:100%; text-align:left;}
+h1,h2,h3,h4{ font-weight:normal;}
+a{ text-decoration:none;}
+a:link {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);	/*禁止链接高亮*/
+	/*-webkit-touch-callout: none;					禁止链接长按弹出选项菜单*/
+}
+a:link, a:visited, a:hover, a:active { text-decoration:none;}
+img{border:0; height:auto; width:100%; max-width:100%;}
+
+input[type="text"]:not(.selectbox),input[type="number"],input[type="password"] {
+	-webkit-user-modify: read-write-plaintext-only;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline-style: none; 
+	border:none;border:0;	
+}
+
+table{
+	border:0;margin:0;border-collapse:collapse;border-spacing:0;
+}
+
+.fw{
+	overflow: auto;
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+.pa{
+	position: absolute;
+}
+
+.pr{
+	position: relative;
+}
+
+.pf{
+	position: fixed;
+}
+
+.tc{
+	text-align: center;
+}
+
+.tr{
+	text-align: right;
+}
+
+.tl{
+	text-align: left;
+}
+
+
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	*zoom: 1;
+	overflow: hidden;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {/* 
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc; */
+	border:  5px solid #fff;
+	border-top: none;
+	border-bottom: none;
+	left: -5px;
+	background: #fff;
+	
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(../images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #fff;
+	border: 1px solid #fcb52d;
+	text-indent: -9999px;
+	display: block;
+	width: 5px;
+	height: 5px;
+	margin: 0 2px;
+	outline: 0;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.bx-pager-link{
+	border: 1px solid #fff;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+	border: 1px solid #fcb52d;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #fcb52d;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(../images/controls.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(../images/controls.png) no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+	display: none;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(../images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(../images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+.oo{
+	opacity: 0;
+}
+
+
+.page.ng-enter,
+.page.ng-leave,
+.page.ng-move {
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+
+.page.ng-enter,
+.page.ng-move {
+  opacity: 0;
+}
+
+.page.ng-move.ng-move-active,
+.page.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.page.ng-leave {
+  opacity: 1;
+}
+
+.page.ng-leave.ng-leave-active {
+  opacity: 0;
+}

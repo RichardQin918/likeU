@@ -1,0 +1,273 @@
+body,html {
+	height: 100%;
+	-webkit-tap-highlight-color: transparent;
+	font-family: Verdana, "Geneva CE", lucida, 'Microsoft YaHei', sans-serif;
+}
+
+.page,body {
+	background-color: #fbf9fe
+}
+
+.page{
+	overflow-x: hidden;
+	margin-bottom: 
+}
+
+
+/*index*/
+.top-header{
+	height: 50px;
+	line-height: 50px;
+	background: #efefef;
+	position: relative;
+}
+
+.top-header h2{
+	font-weight: normal;
+	text-align: center;
+}
+
+.top-header .menu{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background: url(../images/menu.png);
+	background-size: 100%;
+	right: 10px;
+	top: 10px;
+}
+
+.top-header .back{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background: url(../images/back.png);
+	background-size: 100%;
+	left: 10px;
+	top: 10px;
+}
+
+.index .weui_media_box{
+	padding:10px;
+}
+
+.index .weui_media_box.weui_media_text .weui_media_title{
+	margin-bottom: 0;
+}
+
+.bottom{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	height: 50px;
+	line-height: 50px;
+	border-top: 1px solid #ccc;
+	background: #f7f7fa;
+}
+
+.height-50{
+	height: 50px;
+}
+
+.bottom ul{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.bottom li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	list-style-type: none;
+	color: #888; 
+	height: 40px;
+}
+
+.bottom li a{
+	color: #888;
+	position: relative;
+	font-size: 16px;
+	display: block;
+	height: 100%;
+	position: relative;
+
+}
+
+.bottom li a.this-tab{
+	color: #09bb07;
+}
+
+.bottom li a.this-hot:before{
+	position: absolute;
+	content: "";
+	width: 0.5em;
+	height: 0.5em;
+	border-radius: 50%;
+	background: red;
+	top: 0.5em;
+	right: 0.5em;
+}
+
+.index .weui_media_box:before{
+	border: none;
+}
+
+.bottom li img{
+	width: 28px;
+	position: absolute;
+	left: 50%;
+	margin-left: -1em;
+	top: 12px;
+}
+
+.more{
+	position: fixed;
+	right: 10px;
+	bottom: 52px;
+	background: #fff;
+	font-size: 14px;
+	width: 30%;
+	line-height: 2.5em;
+	box-shadow:0px 0px 10px 0px #efefef;
+	-webkit-box-shadow:0px 0px 10px 0px #efefef;
+	-moz-box-shadow:0px 0px 10px 0px #efefef;
+	-o-box-shadow:0px 0px 10px 0px #efefef;
+	-ms-box-shadow:0px 0px 10px 0px #efefef;
+	z-index: 10001;
+}
+
+
+.more dd{
+	border-top: 1px solid #e9e9e9;
+}
+
+.more dd:nth-child(1){
+	border-top: none;
+}
+
+.zz{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.action ul{
+	display: table;
+	width: 100%;
+	background: #f8f8f8;
+}
+
+.action ul li{
+	float: left;
+	width: 25%;
+	font-size: 14px;
+	text-align: center;
+	list-style-type: none;
+	line-height: 3em; 
+}
+
+
+#submit_form{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	margin-left: -25px;
+	z-index: 1000;
+	overflow: hidden;
+	opacity: 0;
+}
+
+#submit_form input{
+	width: 50px;
+	height: 50px;
+}
+
+.up{
+	width: 50px;
+	height: 50px;
+	z-index: 200;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	margin-left: -25px;
+	display: none;
+}
+
+.load-message{
+	width: 6em;
+	height: 25px;
+	background: #3cc51f;
+	color: #fff;
+	font-size: 14px;
+	position: fixed;
+	left: 50%;
+	margin-left: -3em;
+	top: 50%;
+	margin-top: -12.5px;
+	text-align: center;
+	display: none;
+	z-index: 10000;
+}
+
+.load-error{
+	background: red;
+}
+
+.loading{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	left: 50%;
+	margin-left: -20px;
+	top: 50%;
+	margin-top: -20px;
+	animation: load 0.8s infinite 0s linear;
+	-webkit-animation: load 0.8s infinite 0s linear;
+	-o-animation: load 0.8s infinite 0s linear;
+	-ms-animation: load 0.8s infinite 0s linear;
+}
+
+@keyframes load {
+0% {transform:rotate(0deg); }
+100% { transform:rotate(360deg); }
+}
+
+@-webkit-keyframes load {
+0% {-webkit-transform:rotate(0deg); }
+100% { -webkit-transform:rotate(360deg); }
+}
+
+@-o-keyframes load {
+0% {-o-transform:rotate(0deg); }
+100% { -o-transform:rotate(360deg); }
+}
+
+@-ms-keyframes load {
+0% {-ms-transform:rotate(0deg); }
+100% { -ms-transform:rotate(360deg); }
+}
+
+.weui_actionsheet{
+	z-index: 2000;
+}
+
+.weui_cell_ft{
+	width: 40px;
+}
+
+.te{
+	border-top: 1px solid #f8f8f8;
+}
+
+.weui_cell_primary p{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

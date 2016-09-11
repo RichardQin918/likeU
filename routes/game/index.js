@@ -18,7 +18,7 @@ var getToken = require('../../utils/likeUapi').wxGetAccessToken;
 var make = require('../../controllers/game/likeU/make');
 var start = require('../../controllers/game/likeU/start');
 var mysql = require('mysql');
-var config = require('../../config/game/likeU/config');
+
 
 //set up log4js
 log4js.configure({

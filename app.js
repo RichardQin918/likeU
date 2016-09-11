@@ -1,6 +1,6 @@
-/*
+  /*
  Created with Sublime Text 2.
- User: MengPeng
+ User: Richard Qin
  Date: 01/11/16
  Time: 10:30 AM
  Desc: 主程序
@@ -20,9 +20,7 @@ var gameApi = require('./routes/game/api');
 var gamePage = require('./routes/game/index');
 
 
-//微信硬件
-// var hardwareApi = require('./routes/hardware/api');
-// var hardwareIndex = require('./routes/hardware/index');
+
 
 var app = express();
 // view engine setup
